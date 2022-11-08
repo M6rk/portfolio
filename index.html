@@ -1,20 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+<title>Mark's Portfolio</title>
 <head>
-  <title>Mark's Portfolio</title>
+  
+  <style>
+    h1 {
+      text-align: center;
+    }
+  </style>
+
+
+
   <link rel="icon" href="C:\Users\markl\GHProjects\portfolio\images\favicon.ico" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
 </head>
 
 <body>
-<nav class="navbar sticky-top navbar-expand-lg text-light bg-dark">
+  <nav class="navbar sticky-top navbar-expand-lg text-light bg-dark">
     <a class="navbar-brand text-light px-2">Portfolio</a>
     <a class="nav-link px-2" href="C:\Users\markl\cosc122\lab04-M6rk\index.html">Home</a>
     <a class="nav-link px-2" href="C:\Users\markl\cosc122\lab04-M6rk\about.html">About</a>
   </nav>
-  <p style="text-align:center;"><img src="photos\mptxt.png" class="center">
-    <img src="photos\mllogo.png" class="center"></p>
+  <p style="text-align:center;"><img src="photos\mptxt.png">
+
+    <img src="photos\mllogo.png" width="50%" height="50%">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="https://twitter.com/mlalrk"><img src="photos\twitlogo.png" width="6%" height="6%"></a>
+    <a href="https://github.com/M6rk"><img src="photos\githublogo.png" width="6%" height="6%"></a>
+  </p>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1>Testing Area</h1>
+  <br>
+  <br>
+  <br>
+  <div style="text-align: center">
+  <button onclick="">Click(wip)</button>
+  <p id="question"></p>
+</div>
+  <script>
+function question(str) {
+  var ans = window.prompt("How're you doing?");
+            const reg1 = /good/;
+            const reg2 = /not/;
+            const reg3 = /bad/;
+            constreg3 = /okay/;
+            var str = "default";
+            if(ans.test(reg1)) {
+              str = "That's great!";
+            } else if (ans.test(reg2) || ans.test(reg3)) {
+              str = "Sorry to hear that :(";
+            } else if(ans.test(reg3)) {
+              str = "I hope your day gets better!";
+            }
+            document.getElementById("question").innerHTML = str;
+         }
+  </script>
 
 </body>
 
