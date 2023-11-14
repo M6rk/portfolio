@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
 <title>Home / Mark's Portfolio</title>
 
@@ -10,6 +10,45 @@
   <style>
     h1 {
       text-align: center;
+    }
+
+    .bt {
+      padding: 1em 2em;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #406997;
+      transition: all 1000ms;
+      font-size: 15px;
+      position: relative;
+      overflow: hidden;
+      outline: 2px solid #406997;
+    }
+
+    .bt:hover {
+      color: #ffffff;
+      transform: scale(1.1);
+      outline: 2px solid #7094ca;
+      box-shadow: 4px 5px 17px -4px #265191;
+    }
+
+    .bt::before {
+      content: "";
+      position: absolute;
+      left: -50px;
+      top: 0;
+      width: 0;
+      height: 100%;
+      background-color: #406997;
+      transform: skewX(45deg);
+      z-index: -1;
+      transition: width 1000ms;
+    }
+
+    .bt:hover::before {
+      width: 250%;
     }
   </style>
 
@@ -22,14 +61,14 @@
 </head>
 
 <body>
-<!--  <div class ="container-fluid px-0">
+  <!--  <div class ="container-fluid px-0">
   <nav class="navbar sticky-top navbar-expand-lg text-light bg-dark">
     <a class="navbar-brand text-light px-2">Mark's Portfolio</a>
     <a class="nav-link px-2" href="C:\Users\markl\cosc122\lab04-M6rk\index.html">Home</a>
     <a class="nav-link px-2" href="C:\Users\markl\cosc122\lab04-M6rk\about.html">About</a>
     <a class="nav-link px-2" href="C:\Users\markl\cosc122\lab04-M6rk\portfolio.html">Portfolio</a>
   </nav>-->
-  <div class ="container-fluid px-0">
+  <div class="container-fluid px-0">
     <nav class="navbar sticky-top navbar-expand-lg text-light bg-dark">
       <a class="navbar-brand text-light px-2">Mark's Portfolio</a>
       <a class="nav-link active px-2" href="index.html">Home</a>
@@ -38,21 +77,34 @@
       <a class="nav-link active px-2" href="livechat.html">Live Chat</a>
       <a class="nav-link active px-2" href="contact.html">Contact Me</a>
     </nav>
-  <p style="text-align:center;"><img src="photos\mptxt.png">
+    <p style="text-align:center;"><img src="photos\mptxt.png">
 
-    <img src="photos\mllogo.png" width="50%" height="50%">
+      <img src="photos\mllogo.png" width="50%" height="50%">
+      <br>
+      <br>
+      <br>
+      <br>
+
+    <div style="text-align:center">
+      <a href="https://twitter.com/mlalrk"><img src="photos\twitlogo.png" width="6%" height="6%"
+          style="margin-right: 50px;"></a>
+          <a href="about.html">
+      <button class="bt"> About Me
+      </button>
+    </a>
+      <a href="https://github.com/M6rk"><img src="photos\githublogo.png" width="6%" height="6%"
+          style="margin-left: 50px;"></a>
+      <br><br>
+
+
+    </div>
+
+    </p>
+    <h5 style="text-align: center">Please note that this site is currently under development. Everything displayed is
+      subject to change.</h5>
+    <h6 style="text-align: center">This site is hosted through GitHub Pages and does not use a CMS</h6>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <a href="https://twitter.com/mlalrk"><img src="photos\twitlogo.png" width="6%" height="6%"></a>
-    <a href="https://github.com/M6rk"><img src="photos\githublogo.png" width="6%" height="6%"></a>
-  </p>
-  <br><br><br><br><br><br><br><br><br>
-  <h5 style="text-align: center">Please note that this site is currently under development. Everything displayed is subject to change.</h5>
-  <h6 style="text-align: center">This site is hosted through GitHub Pages and does not use any form of CMS</h6>
-  <br>
+    <!--
   <h1>Testing Area</h1>
   <br><br><br>
 </div>
@@ -60,35 +112,36 @@
     <button type="button" class="btn btn-info" onclick="question()"><b>Click Me</b></button>
     
   </div>
-  <script>
-    function question(str) {
-      var ans = window.prompt("How are you doing today? (good/okay/bad)");
-      //regex (fix this lol, currently only directly matches string, need to pattern-match regex)
-      const reg1 = /good/;
-      const reg2 = /bad/;
-      const reg3 = /okay/;
+  -->
+    <script>
+      function question(str) {
+        var ans = window.prompt("How are you doing today? (good/okay/bad)");
+        //regex (fix this lol, currently only directly matches string, need to pattern-match regex)
+        const reg1 = /good/;
+        const reg2 = /bad/;
+        const reg3 = /okay/;
 
-      //const reg1 = "good";
-      //const reg2 = "bad";
-      //const reg3 = "okay";
-      var str = "default";
-      if (ans.match(reg1)) {
-        str = "That's great!";
-      } else if (ans.match(reg2)) {
-        str = "I am sorry to hear that, I hope your day gets better!";
-      } else if (ans.match(reg3)) {
-        str = "I hope your day gets better!";
+        //const reg1 = "good";
+        //const reg2 = "bad";
+        //const reg3 = "okay";
+        var str = "default";
+        if (ans.match(reg1)) {
+          str = "That's great!";
+        } else if (ans.match(reg2)) {
+          str = "I am sorry to hear that, I hope your day gets better!";
+        } else if (ans.match(reg3)) {
+          str = "I hope your day gets better!";
+        }
+        //document.getElementById("question").innerHTML = str;
+        window.prompt(str)
       }
-      //document.getElementById("question").innerHTML = str;
-      window.prompt(str)
-    }
-    function test() {
-      
-    }
-  </script>
-<br>
-<br>
-<br>
+      function test() {
+
+      }
+    </script>
+    <br>
+    <br>
+    <br>
 </body>
 
 </html>
