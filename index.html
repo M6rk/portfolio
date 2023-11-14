@@ -36,6 +36,7 @@
       <a class="nav-link active px-2" href="about.html">About</a>
       <a class="nav-link active px-2" href="portfolio.html">Portfolio</a>
       <a class="nav-link active px-2" href="livechat.html">Live Chat</a>
+      <a class="nav-link active px-2" href="contact.html">Contact Me</a>
     </nav>
   <p style="text-align:center;"><img src="photos\mptxt.png">
 
@@ -48,28 +49,21 @@
     <a href="https://twitter.com/mlalrk"><img src="photos\twitlogo.png" width="6%" height="6%"></a>
     <a href="https://github.com/M6rk"><img src="photos\githublogo.png" width="6%" height="6%"></a>
   </p>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <br><br><br><br><br><br><br><br><br>
+  <h5 style="text-align: center">Please note that this site is currently under development. Everything displayed is subject to change.</h5>
+  <h6 style="text-align: center">This site is hosted through GitHub Pages and does not use any form of CMS</h6>
   <br>
   <h1>Testing Area</h1>
-  <br>
-  <br>
-  <br>
+  <br><br><br>
 </div>
   <div style="text-align: center" >
-    <button type="button" class="btn btn-info" onclick="question()">Click Me</button>
+    <button type="button" class="btn btn-info" onclick="question()"><b>Click Me</b></button>
     
   </div>
   <script>
     function question(str) {
-      var ans = window.prompt("How're you doing? (good/okay/bad)");
-      //regex
+      var ans = window.prompt("How are you doing today? (good/okay/bad)");
+      //regex (fix this lol, currently only directly matches string, need to pattern-match regex)
       const reg1 = /good/;
       const reg2 = /bad/;
       const reg3 = /okay/;
@@ -80,8 +74,8 @@
       var str = "default";
       if (ans.match(reg1)) {
         str = "That's great!";
-      } else if (ans.match(reg2) || ans.test(reg3)) {
-        str = "Sorry to hear that :(";
+      } else if (ans.match(reg2)) {
+        str = "I am sorry to hear that, I hope your day gets better!";
       } else if (ans.match(reg3)) {
         str = "I hope your day gets better!";
       }
