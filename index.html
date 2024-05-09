@@ -10,6 +10,45 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <style>
+    @media only screen and (max-width: 1000px) {
+  body {
+    background-image: url('photos/pathwallpaper.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+    body {
+      background-image: url('photos/pathwallpaper.png');
+      background-repeat: no-repeat;
+    }
+    
+
+    .banner_container {
+      position: relative;
+      text-align: center;
+      font-size: 1em;
+    }
+
+    .banner_container:hover {
+      text-align: center;
+      font-size: 1.03em;
+      transition: font-size 0.5s ease-in-out;
+    }
+
+    .banner_container:not(:hover) {
+      text-align: center;
+      font-size: 1em;
+      transition: font-size 0.5s ease-in-out;
+    }
+
+    .banner_centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
     .navigation {
       text-align: center;
       font-size: 1.3em;
@@ -28,8 +67,37 @@
       /* Keep the transition centered */
     }
 
+    .brighten img {
+      -webkit-filter: brightness(50%);
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+
+    .brighten img:hover {
+      -webkit-filter: brightness(100%);
+    }
+
     h1 {
       text-align: center;
+      text-transform: uppercase;
+      font-family: arial, sans-serif;
+      font-size: 5em;
+      font-weight: 700;
+      color: #ffffff;
+      text-shadow: 1px 1px 1px #66666648,
+        1px 2px 1px #66666648,
+        1px 3px 1px #66666648,
+        1px 4px 1px #66666648,
+        1px 5px 1px #66666648,
+        1px 6px 1px #66666648,
+        1px 7px 1px #66666648,
+        1px 8px 1px #66666648,
+        1px 9px 1px #66666648,
+        1px 10px 1px #66666648,
+        0px 0px 0px rgba(16, 16, 16, 0.4);
     }
 
     .bt {
@@ -39,19 +107,19 @@
       font-weight: bold;
       letter-spacing: 5px;
       text-transform: uppercase;
-      color: #406997;
+      color: #488d73;
       transition: all 1000ms;
       font-size: 15px;
       position: relative;
       overflow: hidden;
-      outline: 2px solid #406997;
+      outline: 2px solid #488d73;
     }
 
     .bt:hover {
       color: #ffffff;
       transform: scale(1.1);
-      outline: 2px solid #7094ca;
-      box-shadow: 4px 5px 17px -4px #265191;
+      outline: 2px solid #5db694;
+      box-shadow: 4px 5px 17px -4px #3c725d;
     }
 
     .bt::before {
@@ -61,7 +129,7 @@
       top: 0;
       width: 0;
       height: 100%;
-      background-color: #406997;
+      background-color: #488d73;
       transform: skewX(45deg);
       z-index: -1;
       transition: width 1000ms;
@@ -79,9 +147,9 @@
     }
   </style>
   <div class="container-fluid px-0">
-     <nav class="navbar sticky-top navbar-expand-lg text-light bg-dark">
+    <nav class="navbar sticky-top navbar-expand-lg text-light bg-dark">
       <a class="navbar-brand text-light px-2" style="font-size: 1.3em;">Mark's Portfolio |</a>
-      <a class="nav-link active px-3 navigation" style="text-decoration: underline;"href="index.html">Home</a>
+      <a class="nav-link active px-3 navigation" style="text-decoration: underline;" href="index.html">Home</a>
       <a class="nav-link active px-3 navigation" href="about.html">About</a>
       <a class="nav-link active px-3 navigation" href="portfolio.html">Portfolio</a>
       <a class="nav-link active px-3 navigation" href="contact.html">Contact Me</a>
@@ -90,24 +158,35 @@
 </head>
 
 <body>
-  <img src="photos\mptxt.png" class="center">
-  <img src="photos\mllogo.png" class="center" width="50%" height="50%">
-  <hr>
-  <br><br><br><br>
+  <div style="margin-top:75px;"></div>
+  <h1 style="font-family: arial, sans-serif; font-weight: bold;">Mark Lovesey</h1>
+  <h3
+    style="color:white; margin-bottom: 75px; background-color: rgba(53, 52, 52, 0.582); padding: 0.3em; border-radius: 25px;"
+    class="center">4th Year Computer Science Major and English Minor at UBC</h3>
+  </div>
+  <!-- Banner with Text 
+  <div class="banner_container">
+    <a href="portfolio.html">
+      <div class="banner_centered" style="color: white; font-size: 5em; font-weight:bold;">View Portfolio</span></div>
+      <img src="photos\path_banner.png" class="center" style="width: 80em; border-radius: 20px;">
+    </a>
+  </div>-->
+  <!--Divider-->
+  <hr style="color: white; border-width: 10px; margin-top:450px;">
+
+  <!--Footer-->
   <div style="text-align:center">
     <a href="https://twitter.com/mlalrk" target="_blank"><img src="photos\twitlogo.png" width="6%" height="6%"
         style="margin-right: 50px;"></a>
     <a href="about.html">
-      <button class="bt"> About Me
+      <button class="bt"><span style="font-size:1.1em;">About Me</span>
       </button>
     </a>
     <a href="https://github.com/M6rk" target="_blank"><img src="photos\githublogo.png" width="6%" height="6%"
         style="margin-left: 50px;"></a>
     <br><br>
   </div>
-  <h5 style="text-align: center">Please note that this site is currently under development. Everything displayed is
-    subject to change.</h5>
-  <h6 style="text-align: center">This site is hosted through GitHub Pages and does not use a CMS.</h6>
+  <h6 style="text-align: center; color: white;">This site is hosted using GitHub Pages.</h6>
   <br>
 </body>
 
