@@ -1,13 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
-<title>Home / Mark's Portfolio</title>
 
-<head>
-
+<head lang="eng">
+  <title>Home / Mark's Portfolio</title>
+  <link rel="icon" href="C:\Users\markl\GHProjects\portfolio\images\favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <style>
+    .navigation {
+      text-align: center;
+      font-size: 1.3em;
+      transition: font-size 0.25s ease-in-out, font-weight 0.5s ease-in-out, transform 0.25s ease-in-out;
+      /* Add transform transition */
+      font-weight: normal;
+      /* Set initial font weight to italic */
+      transform: translateX(0);
+      /* Center the transition */
+    }
+
+    .navigation:hover {
+      font-size: 1.45em;
+      /* Change font weight to normal on hover */
+      transform: translateX(0);
+      /* Keep the transition centered */
+    }
+
     h1 {
       text-align: center;
     }
@@ -50,97 +70,45 @@
     .bt:hover::before {
       width: 250%;
     }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
   </style>
-
-
-
-  <link rel="icon" href="C:\Users\markl\GHProjects\portfolio\images\favicon.ico" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+  <div class="container-fluid px-0">
+     <nav class="navbar sticky-top navbar-expand-lg text-light bg-dark">
+      <a class="navbar-brand text-light px-2" style="font-size: 1.3em;">Mark's Portfolio |</a>
+      <a class="nav-link active px-3 navigation" style="text-decoration: underline;"href="index.html">Home</a>
+      <a class="nav-link active px-3 navigation" href="about.html">About</a>
+      <a class="nav-link active px-3 navigation" href="portfolio.html">Portfolio</a>
+      <a class="nav-link active px-3 navigation" href="contact.html">Contact Me</a>
+    </nav>
+  </div>
 </head>
 
 <body>
-  <!--  <div class ="container-fluid px-0">
-  <nav class="navbar sticky-top navbar-expand-lg text-light bg-dark">
-    <a class="navbar-brand text-light px-2">Mark's Portfolio</a>
-    <a class="nav-link px-2" href="C:\Users\markl\cosc122\lab04-M6rk\index.html">Home</a>
-    <a class="nav-link px-2" href="C:\Users\markl\cosc122\lab04-M6rk\about.html">About</a>
-    <a class="nav-link px-2" href="C:\Users\markl\cosc122\lab04-M6rk\portfolio.html">Portfolio</a>
-  </nav>-->
-  <div class="container-fluid px-0">
-    <nav class="navbar sticky-top navbar-expand-lg text-light bg-dark">
-      <a class="navbar-brand text-light px-2">Mark's Portfolio</a>
-      <a class="nav-link active px-2" href="index.html">Home</a>
-      <a class="nav-link active px-2" href="about.html">About</a>
-      <a class="nav-link active px-2" href="portfolio.html">Portfolio</a>
-      <a class="nav-link active px-2" href="contact.html">Contact Me</a>
-    </nav>
-    <p style="text-align:center;"><img src="photos\mptxt.png">
-
-      <img src="photos\mllogo.png" width="50%" height="50%">
-      <br>
-      <br>
-      <br>
-      <br>
-
-    <div style="text-align:center">
-      <a href="https://twitter.com/mlalrk"><img src="photos\twitlogo.png" width="6%" height="6%"
-          style="margin-right: 50px;"></a>
-          <a href="about.html">
+  <img src="photos\mptxt.png" class="center">
+  <img src="photos\mllogo.png" class="center" width="50%" height="50%">
+  <hr>
+  <br><br><br><br>
+  <div style="text-align:center">
+    <a href="https://twitter.com/mlalrk" target="_blank"><img src="photos\twitlogo.png" width="6%" height="6%"
+        style="margin-right: 50px;"></a>
+    <a href="about.html">
       <button class="bt"> About Me
       </button>
     </a>
-      <a href="https://github.com/M6rk"><img src="photos\githublogo.png" width="6%" height="6%"
-          style="margin-left: 50px;"></a>
-      <br><br>
-
-
-    </div>
-
-    </p>
-    <h5 style="text-align: center">Please note that this site is currently under development. Everything displayed is
-      subject to change.</h5>
-    <h6 style="text-align: center">This site is hosted through GitHub Pages and does not use a CMS</h6>
-    <br>
-    <!--
-  <h1>Testing Area</h1>
-  <br><br><br>
-</div>
-  <div style="text-align: center" >
-    <button type="button" class="btn btn-info" onclick="question()"><b>Click Me</b></button>
-    
+    <a href="https://github.com/M6rk" target="_blank"><img src="photos\githublogo.png" width="6%" height="6%"
+        style="margin-left: 50px;"></a>
+    <br><br>
   </div>
-  -->
-    <script>
-      function question(str) {
-        var ans = window.prompt("How are you doing today? (good/okay/bad)");
-        //regex (fix this lol, currently only directly matches string, need to pattern-match regex)
-        const reg1 = /good/;
-        const reg2 = /bad/;
-        const reg3 = /okay/;
-
-        //const reg1 = "good";
-        //const reg2 = "bad";
-        //const reg3 = "okay";
-        var str = "default";
-        if (ans.match(reg1)) {
-          str = "That's great!";
-        } else if (ans.match(reg2)) {
-          str = "I am sorry to hear that, I hope your day gets better!";
-        } else if (ans.match(reg3)) {
-          str = "I hope your day gets better!";
-        }
-        //document.getElementById("question").innerHTML = str;
-        window.prompt(str)
-      }
-      function test() {
-
-      }
-    </script>
-    <br>
-    <br>
-    <br>
+  <h5 style="text-align: center">Please note that this site is currently under development. Everything displayed is
+    subject to change.</h5>
+  <h6 style="text-align: center">This site is hosted through GitHub Pages and does not use a CMS.</h6>
+  <br>
 </body>
 
 </html>
