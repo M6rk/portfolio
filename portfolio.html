@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
 <title>Portfolio / Mark's Portfolio</title>
 
 <head>
 
   <style>
+    @font-face {
+      font-family: Lemon;
+      font-weight: bold;
+      src: url('fonts/LEMONMILK-Bold.otf');
+    }
+
+    @font-face {
+      font-family: Lemon;
+      src: url('fonts/LEMONMILK-Light.otf');
+    }
+
+    body {
+      background-color: rgb(27, 27, 27);
+    }
+
+    p {
+      color: white;
+    }
+
+    h1 {
+      color: white;
+    }
+
+    h5 {
+      font-family: Lemon, sans-serif;
+      color: white;
+    }
+
+    h3 {
+      color: white;
+    }
+
     /*
      body {
       background-image: url('photos/cloudwallpaper.png');
@@ -32,52 +64,121 @@
       transform: translateX(0);
       /* Keep the transition centered */
     }
+
     h1 {
       text-align: center;
     }
   </style>
-
-
 </head>
-
 <body>
-    <div class ="container-fluid px-0">
-      <nav class="navbar sticky-top navbar-expand-lg text-light bg-dark">
-        <a class="navbar-brand text-light px-2" style="font-size: 1.3em;">Mark's Portfolio |</a>
-        <a class="nav-link active px-3 navigation" href="index.html">Home</a>
-        <a class="nav-link active px-3 navigation" href="about.html">About</a>
-        <a class="nav-link active px-3 navigation" style="text-decoration: underline;" href="portfolio.html">Portfolio</a>
-        <a class="nav-link active px-3 navigation" href="contact.html">Contact Me</a>
-      </nav>
+  <div class="container-fluid px-0">
+    <nav class="navbar sticky-top navbar-expand-lg text-light bg-dark">
+      <a class="navbar-brand text-light px-2" style="font-size: 1.3em;">Mark's Portfolio |</a>
+      <a class="nav-link active px-3 navigation" href="index.html">Home</a>
+      <a class="nav-link active px-3 navigation" href="about.html">About</a>
+      <a class="nav-link active px-3 navigation" style="text-decoration: underline;" href="portfolio.html">Portfolio</a>
+      <a class="nav-link active px-3 navigation" href="contact.html">Contact Me</a>
+    </nav>
+    <h1 style="font-family: Lemon, sans-serif; font-weight: bold; font-size: 4em; margin-top:1em;">Portfolio</h1>
+      <div class="container">
+      <div class="row align-items-start">
+        <div class="col">
+           <p style="font-family: Lemon, sans-serif; font-size: 2.7em; margin-top:2em;">Development</p>
+        </div>
+      </div>
+    </div>
+   
+    <!--gif made by eden-->
 
-  <p style="text-align:center;"><img src="photos\portfoliotitlefix.png"></p>
-<br>
-<br>
-  <p style="text-align:center;"><img src="photos\devtitle.png"></p>
-        <!--gif made by eden-->
-  <p style="text-align:center;"><img src="photos\skeletongif.gif" style=width:400x;height:200px></p>
+    <div class="container">
+      <hr style="color: white; border-width: 10px;">
+      <div class="row align-items-start">
+        <div class="col">
+          <h3 style="position: absolute; margin: 0 auto;">EduQuest</h3>
+          <p style="text-align: center;">
+            <img src="photos\eduquestlogo.webp" style="width: 25%;">
+          </p>
+          <p style="font-size:17px; background-color: rgba(53, 52, 52, 0.582); padding: 1em; border-radius: 25px;">
+            <strong>Stack:</strong> NEXT.js, Tailwind CSS, Typescript, React<br>
+            <strong>Role:</strong> Scrum Master, Full Stack Development, Design, and Documentation <br>
+            <strong><a href="https://github.com/chpsmstr/eduQuest">Repository</a></strong>
+          </p>
+          <p
+            style="text-align:center; font-size:17px; background-color: rgba(53, 52, 52, 0.582); padding: 1em; border-radius: 25px;">
+            EduQuest is an innovative student e-learning platform where teachers can operate classroom spaces with the
+            creation of
+            multiple-choice quizzes and asynchronous essay responses. This application sets itself apart by focusing on
+            a retro video-game theme to entice students to learn on the platform.
+            Students can track their progress/grades, interact with other students and complete assignments.
+            Administrators can create a school space, within these spaces they can assign teachers, enroll students, and
+            perform space moderation.
+          </p>
+        </div>
+      </div>
+      <hr style="color: white; border-width: 10px;">
+      <div class="row align-items-start">
+        <div class="col">
+          <h3 style="position: absolute; margin: 0 auto;">EduQuest</h3>
+          <p style="text-align: center;">
+            <img src="photos\islogo.webp" style="width: 20%;">
+          </p>
+          <p style="font-size:17px; background-color: rgba(53, 52, 52, 0.582); padding: 1em; border-radius: 25px;">
+            <strong>Stack:</strong> PHP, HTML5, CSS3, JavaScript, JQuery, Ajax<br>
+            <strong>Role:</strong> Lead Frontend Development, Backend Development, Design, Documentation <br>
+            <strong><a href="https://github.com/Daniel-Penner/Inflation-Station">Repository</a></strong>
+          </p>
+          <p
+            style="text-align:center; font-size:17px; background-color: rgba(53, 52, 52, 0.582); padding: 1em; border-radius: 25px;">
+            EduQuest is an innovative student e-learning platform where teachers can operate classroom spaces with the
+            creation of
+            multiple-choice quizzes and asynchronous essay responses. This application sets itself apart by focusing on
+            a retro video-game theme to entice students to learn on the platform.
+            Students can track their progress/grades, interact with other students and complete assignments.
+            Administrators can create a school space, within these spaces they can assign teachers, enroll students, and
+            perform space moderation.
+          </p>
+        </div>
+      </div>
+      <hr style="color: white; border-width: 10px;">
+      <div class="row align-items-start">
+        <div class="col">
+          <h3 style="margin-bottom:1.4em;">Text-Based Dungeon Crawler Game</h3>
+          <p style="text-align:center;"><img src="photos\skeletongif.gif" style=width:20%;></p>
+          <p
+            style="font-size:17px; background-color: rgba(53, 52, 52, 0.582); padding: 1em; border-radius: 25px;">
+            <strong>Stack:</strong> Java<br>
+          <p
+            style="text-align:center; font-size:17px; background-color: rgba(53, 52, 52, 0.582); padding: 1em; border-radius: 25px;">
+            In this project I created a short and randomized dungeon crawler game that is played within the terminal.
+            A dungeon crawler game generally involves creating a character then going into room after room searching for
+            gear and fighting enemies.
+            This was my first programming project and reinforced my understanding of Java.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col">
+           <p style="font-family: Lemon, sans-serif; font-size: 2.7em; margin-top:2em;">Designs</p>
+           <hr style="color: white; border-width: 10px;">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col" style="text-align:center;">
+          <p style="font-family: Lemon, sans-serif; font-size: 2em; margin-top:2em;">Banners</p>
+          <hr style="color: white; border-width: 10px; width:10em; margin: 0 auto; margin-bottom:1em;">
+          <img src="photos\banner.png" style="width:54.2em; padding: 0.1em 0.1em;">
 
-  <h3 style="text-align:center">Text-Based Dungeon Crawler Game</h3>
-  <pre>
-  <p style="text-align:center;font-size:17px;">In this project I created a short and randomized dungeon crawler game that is played within a text window. 
-    A dungeon crawler game generally involves creating a character then going into room after room searching for gear and fighting enemies. 
-    This project was created entirely using Java's base library.</p>
-</pre>
-  <br>
-  <br>
-  <p style="text-align:center;"><img src="photos\designstitle.png"></p>
-
-  <p style="text-align:center;"><img src="photos\banner.png"></p>
-
-  <p style="text-align:center;"><img src="photos\alma2.png" style="width:854px;height:250px"></p>
-
-  <p style="text-align:center;"><img src="photos\lowpolylandscapetest.png" style="width:854px;height:350px"></p>
-
-  <p style="text-align:center;"><img src="photos\conceptrender.png" style="width:854px;height:475px"></p>
-  
-
-
-
+          <img src="photos\alma2.png" style="width:55em; padding: 0.5em 0.5em;">
+          <p style="font-family: Lemon, sans-serif; font-size: 2em; margin-top:2em;">Renders</p>
+          <hr style="color: white; border-width: 10px; width:10em; margin: 0 auto; margin-bottom:1em;">
+          <img src="photos\lowpolylandscapetest.png" style="width:55em; padding: 0.5em 0.5em;">
+      
+          <img src="photos\conceptrender.png" style="width:55.2em; padding: 0.5em 0.5em;">
+        </div>
+      </div>
+    </div>
 </body>
-
 </html>

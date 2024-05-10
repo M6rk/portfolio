@@ -1,6 +1,10 @@
+@font-face { font-family: Lemon; font-weight: bold; src: url('fonts/LEMONMILK-Bold.otf'); } 
+@font-face { font-family: Lemon; src: url('fonts/LEMONMILK-Light.otf'); } 
+
 .center {
   text-align: center;
 }
+
 /*Navigation Links Animation (Scale in Scale out)*/
 .navigation {
   text-align: center;
