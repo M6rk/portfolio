@@ -44,22 +44,16 @@
     }
 
     .navigation {
-      text-align: center;
-      font-size: 1.3em;
-      transition: font-size 0.25s ease-in-out, font-weight 0.5s ease-in-out, transform 0.25s ease-in-out;
-      /* Add transform transition */
-      font-weight: normal;
-      /* Set initial font weight to italic */
-      transform: translateX(0);
-      /* Center the transition */
-    }
+  text-align: center;
+  font-size: 1.3em;
+  transition: transform 0.4s ease-in-out;
+  transform: scale(1);
+}
 
-    .navigation:hover {
-      font-size: 1.45em;
-      /* Change font weight to normal on hover */
-      transform: translateX(0);
-      /* Keep the transition centered */
-    }
+.navigation:hover {
+  font-size: 1.3em;
+  transform: scale(1.1);
+}
 
     .brighten img {
       -webkit-filter: brightness(50%);
