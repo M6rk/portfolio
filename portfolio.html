@@ -50,19 +50,13 @@
     .navigation {
       text-align: center;
       font-size: 1.3em;
-      transition: font-size 0.25s ease-in-out, font-weight 0.5s ease-in-out, transform 0.25s ease-in-out;
-      /* Add transform transition */
-      font-weight: normal;
-      /* Set initial font weight to italic */
-      transform: translateX(0);
-      /* Center the transition */
+      transition: transform 0.3s ease-in-out;
+      transform: scale(1);
     }
 
     .navigation:hover {
-      font-size: 1.45em;
-      /* Change font weight to normal on hover */
-      transform: translateX(0);
-      /* Keep the transition centered */
+      font-size: 1.3em;
+      transform: scale(1.1);
     }
 
     h1 {
@@ -70,6 +64,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container-fluid px-0">
     <nav class="navbar sticky-top navbar-expand-lg text-light bg-dark">
@@ -80,14 +75,14 @@
       <a class="nav-link active px-3 navigation" href="contact.html">Contact Me</a>
     </nav>
     <h1 style="font-family: Lemon, sans-serif; font-weight: bold; font-size: 4em; margin-top:1em;">Portfolio</h1>
-      <div class="container">
+    <div class="container">
       <div class="row align-items-start">
         <div class="col">
-           <p style="font-family: Lemon, sans-serif; font-size: 2.7em; margin-top:2em;">Development</p>
+          <p style="font-family: Lemon, sans-serif; font-size: 2.7em; margin-top:2em;">Development</p>
         </div>
       </div>
     </div>
-   
+
     <!--gif made by eden-->
 
     <div class="container">
@@ -129,8 +124,11 @@
           </p>
           <p
             style="text-align:center; font-size:17px; background-color: rgba(53, 52, 52, 0.582); padding: 1em; border-radius: 25px;">
-            Inflation Station is a grocery price tracker web-app that enables users to rate products and view product price fluctuations in real-time. This application focuses on providing users with the lowest grocery prices near them.
-            The application features an administrator dashboard to manage user interactions, approve the publication of new projects, and view graphed site analytics.
+            Inflation Station is a grocery price tracker web-app that enables users to rate products and view product
+            price fluctuations in real-time. This application focuses on providing users with the lowest grocery prices
+            near them.
+            The application features an administrator dashboard to manage user interactions, approve the publication of
+            new projects, and view graphed site analytics.
           </p>
         </div>
       </div>
@@ -140,8 +138,7 @@
           <h3 style="margin-bottom:1.4em;">Text-Based Dungeon Crawler Game</h3>
           <p style="text-align:center;"><img src="photos\skeletongif.gif" style=width:20%;></p>
           <!--gif by eden-->
-          <p
-            style="font-size:17px; background-color: rgba(53, 52, 52, 0.582); padding: 1em; border-radius: 25px;">
+          <p style="font-size:17px; background-color: rgba(53, 52, 52, 0.582); padding: 1em; border-radius: 25px;">
             <strong>Stack:</strong> Java<br>
           <p
             style="text-align:center; font-size:17px; background-color: rgba(53, 52, 52, 0.582); padding: 1em; border-radius: 25px;">
@@ -155,8 +152,8 @@
     <div class="container">
       <div class="row align-items-start">
         <div class="col">
-           <p style="font-family: Lemon, sans-serif; font-size: 2.7em; margin-top:2em;">Designs</p>
-           <hr style="color: white; border-width: 10px;">
+          <p style="font-family: Lemon, sans-serif; font-size: 2.7em; margin-top:2em;">Designs</p>
+          <hr style="color: white; border-width: 10px;">
         </div>
       </div>
     </div>
@@ -171,10 +168,11 @@
           <p style="font-family: Lemon, sans-serif; font-size: 2em; margin-top:2em;">Renders</p>
           <hr style="color: white; border-width: 10px; width:10em; margin: 0 auto; margin-bottom:1em;">
           <img src="photos\lowpolylandscapetest.png" style="width:55em; padding: 0.5em 0.5em;">
-      
+
           <img src="photos\conceptrender.png" style="width:55.2em; padding: 0.5em 0.5em;">
         </div>
       </div>
     </div>
 </body>
+
 </html>

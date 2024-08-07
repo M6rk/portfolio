@@ -11,28 +11,25 @@
     body {
       background-color: rgb(27, 27, 27);
     }
+
     p {
       color: white;
     }
+
     h1 {
       color: white;
     }
+
     .navigation {
       text-align: center;
       font-size: 1.3em;
-      transition: font-size 0.25s ease-in-out, font-weight 0.5s ease-in-out, transform 0.25s ease-in-out;
-      /* Add transform transition */
-      font-weight: normal;
-      /* Set initial font weight to italic */
-      transform: translateX(0);
-      /* Center the transition */
+      transition: transform 0.3s ease-in-out;
+      transform: scale(1);
     }
 
     .navigation:hover {
-      font-size: 1.45em;
-      /* Change font weight to normal on hover */
-      transform: translateX(0);
-      /* Keep the transition centered */
+      font-size: 1.3em;
+      transform: scale(1.1);
     }
 
     .brighten img {
@@ -58,20 +55,20 @@
 </head>
 
 <body>
-  <div class="container-fluid px-0">
-    <nav class="navbar sticky-top navbar-expand-lg text-light bg-dark">
-      <a class="navbar-brand text-light px-2" style="font-size: 1.3em;">Mark's Portfolio |</a>
-      <a class="nav-link active px-3 navigation" href="index.html">Home</a>
-      <a class="nav-link active px-3 navigation" href="about.html">About</a>
-      <a class="nav-link active px-3 navigation" href="portfolio.html">Portfolio</a>
-      <a class="nav-link active px-3 navigation" style="text-decoration: underline;" href="contact.html">Contact Me</a>
-    </nav>
-    <br><br><br>
-    <div class="center">
+
+  <nav class="navbar sticky-top navbar-expand-lg text-light bg-dark">
+    <a class="navbar-brand text-light px-2" style="font-size: 1.3em;">Mark's Portfolio |</a>
+    <a class="nav-link active px-3 navigation" href="index.html">Home</a>
+    <a class="nav-link active px-3 navigation" href="about.html">About</a>
+    <a class="nav-link active px-3 navigation" href="portfolio.html">Portfolio</a>
+    <a class="nav-link active px-3 navigation" style="text-decoration: underline;" href="contact.html">Contact Me</a>
+  </nav>
+  <br><br><br>
+  <div class="center">
     <img src="photos\wip.png" width="500px">
-</div>
-<h1>mark.lovesey03@gmail.com</h1>
-<h1>contact form coming soon!</h1>
+  </div>
+  <h1>mark.lovesey03@gmail.com</h1>
+  <h1>contact form coming soon!</h1>
 </body>
 <footer>
 
