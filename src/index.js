@@ -7,6 +7,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import HomePage from './pages/HomePage';
 import PortfolioPage from './pages/PortfolioPage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,16 @@ const router = createBrowserRouter([
     //portfolio page
     path : '/projects',
     element : <PortfolioPage />
+  },
+  {
+    //portfolio page
+    path : '/about',
+    element : <AboutPage />
+  },
+  {
+    //portfolio page
+    path : '/contact',
+    element : <ContactPage />
   }
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));

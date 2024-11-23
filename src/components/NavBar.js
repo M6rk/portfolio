@@ -5,8 +5,12 @@ function NavBar() {
   const [animate, setAnimate] = useState(false);
 
   const handleImageClick = () => {
-    setAnimate(true);
-    setTimeout(() => setAnimate(false), 1000); // Reset animation after 1 second
+    if (!animate) {
+      setAnimate(true);
+      setTimeout(() => {
+        setAnimate(false);
+      }, 1000); // Adjust the timeout duration to match the animation duration
+    }
   };
   return (
     <nav className="navbar-container bg-blue-500">
@@ -38,10 +42,12 @@ function NavBar() {
           </li>
         </ul>
         <div className="flex justify-center items-center">
-          <img src={`${process.env.PUBLIC_URL}/images/mark.webp`}
-          alt="Designed by Freepik" 
-          className={`w-28 cursor-pointer ${animate ? 'animate-spin animate-once animate-ease-in-out' : ''}`}
-          onClick={handleImageClick}
+        <img
+            src={`${process.env.PUBLIC_URL}/images/mark2.webp`}
+            alt="Designed by Freepik"
+            className={`w-9 cursor-pointer ${animate ? 'animate-spin animate-once animate-ease-in-out' : ''}`}
+            onClick={handleImageClick}
+            style={{ pointerEvents: animate ? 'none' : 'auto' }} // Disable pointer events during animation
           />
         </div>
       </div>
