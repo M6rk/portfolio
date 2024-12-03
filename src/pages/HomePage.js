@@ -13,7 +13,7 @@ const HomePage = () => {
                 </div>
                 <div className="flex justify-center items-center pt-1">
                     <h2 className="text-white text-[1.2rem] lg:text-[1.25rem] md:text-[1.25] sm:text-[1.2] font-extralight text-center">
-                        Bridging <a href="/projects" className="font-semibold underline text-white decoration-amber-300 decoration-double">Tech</a> & <a href="/projects" className="font-semibold underline text-white decoration-green-300 decoration-double">Humanities</a>
+                        Bridging <span className="font-semibold text-white underline decoration-amber-300 decoration-double">Tech</span> & <span className="font-semibold underline text-white decoration-green-300 decoration-double">Humanities</span>
                     </h2>
                 </div>
                 <div className="flex justify-center items-center p-16"> 
@@ -31,14 +31,14 @@ const HomePage = () => {
                         <img
                             src={`${process.env.PUBLIC_URL}/images/github.svg`}
                             alt="GitHub Logo"
-                            className="w-16 cursor-pointer hover:scale-110 transition-transform duration-200"
+                            className="w-16 mt-10 cursor-pointer hover:scale-110 transition-transform duration-200"
                         />
                     </a>
                     <a href="https://www.linkedin.com/in/marklovesey/" target="_blank">
                         <img
                             src={`${process.env.PUBLIC_URL}/images/linkedin.webp`}
                             alt="LinkedIn Logo"
-                            className="w-16 cursor-pointer hover:scale-110 transition-transform duration-200"
+                            className="w-16 mt-10 cursor-pointer hover:scale-110 transition-transform duration-200"
                         />
                     </a>
                 </div>
