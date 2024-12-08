@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 
 const PhotoCarousel = ({ images }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -11,6 +12,14 @@ const PhotoCarousel = ({ images }) => {
         setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
     };
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+        }, 7000);
+
+        return () => clearInterval(interval);
+    }, [images.length]);
+
     return (
         <div className="relative w-full w-[35rem] max-w-[40rem] mx-auto p-4 rounded-lg bg-white">
             <div className="relative w-full flex justify-center items-center">
@@ -19,19 +28,19 @@ const PhotoCarousel = ({ images }) => {
                         key={index}
                         src={image}
                         alt={`Slide ${index}`}
-                        className={`h-[50%] transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
+                        className={`w-[40rem] h-[19rem] transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
                         style={{ display: index === currentIndex ? 'block' : 'none' }}
                     />
                 ))}
                 <button
                     onClick={handlePrevClick}
-                    className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+                    className="absolute left-0 top-1/2 transform -translate-y-1/2 text-white p-2 rounded-full"
                 >
                     &#9664;
                 </button>
                 <button
                     onClick={handleNextClick}
-                    className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+                    className="absolute right-0 top-1/2 transform -translate-y-1/2 text-white p-2 rounded-full"
                 >
                     &#9654;
                 </button>

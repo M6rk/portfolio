@@ -3,10 +3,26 @@ import NavBar from '../components/NavBar';
 import PhotoCarousel from '../components/PhotoCarousel';
 
 const PortfolioPage = () => {
-    const images = [
+    const eduQuestImages = [
         `${process.env.PUBLIC_URL}/images/eduquestgif1.gif`,
         `${process.env.PUBLIC_URL}/images/eduquestimage2.png`,
         `${process.env.PUBLIC_URL}/images/eduquestimage3.png`,
+    ];
+    const iSImages = [
+        `${process.env.PUBLIC_URL}/images/is1.png`,
+        `${process.env.PUBLIC_URL}/images/is2.png`,
+        `${process.env.PUBLIC_URL}/images/is3.png`,
+    ];
+    const irisImages = [
+        `${process.env.PUBLIC_URL}/images/iris1.gif`,
+        `${process.env.PUBLIC_URL}/images/iris2.gif`,
+        `${process.env.PUBLIC_URL}/images/iris3.png`,
+    ];
+    const designImages = [
+        { src: `${process.env.PUBLIC_URL}/images/markban.png`, caption: 'Social Banner' },
+        { src: `${process.env.PUBLIC_URL}/images/alma2.png`, caption: 'Social Banner' },
+        { src: `${process.env.PUBLIC_URL}/images/conceptrender.png`, caption: 'Character Perspective Render' },
+        { src: `${process.env.PUBLIC_URL}/images/lowpolylandscapetest.png`, caption: 'Lowpoly Landscape Render' },
     ];
     return (
         <>
@@ -38,7 +54,7 @@ const PortfolioPage = () => {
                             <img src={`${process.env.PUBLIC_URL}/images/eduquestlogo.webp`} className="w-[17rem] rounded-md" alt="Mark Lovesey" />
                         </div>
                         <div className="flex justify-center items-center mb-6">
-                            <PhotoCarousel images={images} />
+                            <PhotoCarousel images={eduQuestImages} />
                         </div>
                         <div className="flex justify-center items-center mb-6">
                         
@@ -61,6 +77,9 @@ const PortfolioPage = () => {
                             <img src={`${process.env.PUBLIC_URL}/images/islogo.webp`} className="w-[12rem] p-4 rounded-md" alt="Mark Lovesey" />
                         </div>
                         <div className="flex justify-center items-center mb-6">
+                            <PhotoCarousel images={iSImages} />
+                        </div>
+                        <div className="flex justify-center items-center mb-6">
                             <div className="bg-green-400 rounded-xl min-w-[80%] p-4">
                                 <p className="text-white text-left"><strong>Stack:</strong> PHP, HTML5, CSS3, JavaScript, JQuery, MySQL<br></br>
                                     <strong>Role:</strong> Lead Frontend Development, Backend Development, Design, Documentation<br></br>
@@ -79,6 +98,9 @@ const PortfolioPage = () => {
                             <img src={`${process.env.PUBLIC_URL}/images/white_iris_transparent.webp`} className="w-[13rem] p-6 rounded-md" alt="Mark Lovesey" />
                         </div>
                         <div className="flex justify-center items-center mb-6">
+                            <PhotoCarousel images={irisImages} />
+                        </div>
+                        <div className="flex justify-center items-center mb-6">
                             <div className="bg-sky-400 rounded-xl min-w-[80%] p-4">
                                 <p className="text-white text-left"><strong>Stack:</strong> Express.js, React, Tailwind CSS, JavaScript, MySQL<br></br>
                                     <strong>Role:</strong> Full Stack Development, UX/UI Design, & Documentation<br></br>
@@ -88,8 +110,18 @@ const PortfolioPage = () => {
                         <div className="flex justify-center items-center mb-6">
                             <div className="bg-cyan-400 rounded-xl min-w-[80%] max-w-[80%] p-4">
                                 <p className="text-white text-left">IRIS is an insurance review and analysis system created during my capstone group project. 
-                                    Myself and my four team members worked for two semesters on this project in competition with other groups for our client BFL Canada.</p>
+                                    Myself and my four team members are working on this application for a total of two semesters in competition with other groups for our client BFL Canada.</p>
                             </div>
+                        </div>
+                        <h2 className="text-[2.5rem] text-left text-stone-900 text-white" style={{ fontFamily: 'Lemon Milk', fontWeight: 300 }}>DESIGN</h2>
+                        <hr className="border-4 border-blue-200 mb-4"></hr>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            {designImages.map((image, index) => (
+                                <div key={index} className="flex flex-col items-center">
+                                    <img src={image.src} alt={image.caption} className="w-full h-auto rounded-md" />
+                                    <p className="font-normal text-white underline decoration-blue-300 decoration-double">{image.caption}</p>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
