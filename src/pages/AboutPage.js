@@ -12,6 +12,7 @@ const AboutPage = () => {
             console.error("Failed to copy: ", err);
         }
     }
+
     return (
         <>
             <style>
@@ -30,14 +31,14 @@ const AboutPage = () => {
                 }
                 `}
             </style>
-            <div className="flex flex-col min-h-screen bg-cover bg-center bg-blue-400 overflow-hidden">
+            <div className="flex flex-col min-h-screen bg-cover bg-center bg-blue-400">
                 <NavBar />
-                <div className="flex justify-center items-start p-6 space-x-6 pt-12 bg-center bg-blue-400">
-                    <div className="flex flex-col space-y-6">
-                        <img src={`${process.env.PUBLIC_URL}/images/markphoto.png`} className="w-0 lg:w-[25rem] md:w-0 rounded-md" alt="Mark Lovesey" />
-                        <img src={`${process.env.PUBLIC_URL}/images/sky.jpg`} className="w-0 lg:w-[25rem] lg:h-[30.32rem] md:w-0 md:h-0 rounded-md" alt="Mark Lovesey" />
+                <div className="flex flex-col lg:flex-row justify-center p-6 space-x-6 pt-12 bg-center bg-blue-400">
+                <div className="flex flex-row pb-6 lg:flex-col lg:pb-0 lg:space-x-0 lg:space-y-6">
+                        <img src={`${process.env.PUBLIC_URL}/images/markphoto.webp`} className="max-w-[20rem] lg:max-w-[25rem] w-[18rem] flex-grow lg:w-[25rem] md:w-[15rem] rounded-md mx-auto lg:mx-0" alt="Mark Lovesey" />
+                        <img src={`${process.env.PUBLIC_URL}/images/sky.jpg`} className="hidden lg:flex lg:w-[25rem] md:w-[15rem] rounded-md mx-auto lg:mx-0" alt="Mark Lovesey" />
                     </div>
-                    <div className="bg-white p-6 rounded-md lg:max-w-[60rem] md:max-w-[60rem] sm:max-w-[60rem] max-w-[20rem]">
+                    <div className="bg-white p-6 rounded-md lg:max-w-[60rem] md:max-w-[60rem] sm:max-w-[60rem] max-w-[25rem]">
                         <div className="flex flex-col space-y-4">
                             <h1 className="text-[2.8rem] text-center text-stone-900 selection:bg-blue-300" style={{ fontFamily: 'Lemon Milk', fontWeight: 300 }}>ABOUT ME</h1>
                             <p className="text-md selection:bg-blue-100">
@@ -69,11 +70,10 @@ const AboutPage = () => {
                             <p className="text-md selection:bg-blue-100"> 
                                 Thank you for your time and you can connect with me at <span className="underline cursor-pointer" onClick={copyField} style={{ cursor: 'pointer'}}>
                                     mark.lovesey03@gmail.com
-                                </span> or through <a className="underline" href="/contact">the form</a>.
+                                </span>.
                             </p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </>

@@ -44,12 +44,12 @@ const PortfolioPage = () => {
             </style>
             <div className="flex flex-col min-h-screen bg-cover bg-center bg-blue-400">
                 <NavBar />
-                <div className="flex justify-center items-center pt-16">
+                <div className="flex justify-center items-center">
                     <div className="w-[90rem] py-8 rounded-md lg:max-w-[90rem] md:max-w-[90rem] sm:max-w-[90rem] max-w-[30rem]">
-                        <h1 className="text-[3.5rem] text-center text-stone-900 mb-4 text-white" style={{ fontFamily: 'Lemon Milk', fontWeight: 500 }}>PORTFOLIO</h1>
-                        <h2 className="text-[2.5rem] text-left text-stone-900 text-white" style={{ fontFamily: 'Lemon Milk', fontWeight: 300 }}>DEVELOPMENT</h2>
+                        <h1 className="text-[3.5rem] text-center text-stone-900 text-white" style={{ fontFamily: 'Lemon Milk', fontWeight: 500 }}>PORTFOLIO</h1>
+                        <h2 className="text-[2.5rem] text-center lg:text-left md:text-left sm:text-left text-stone-900 text-white" style={{ fontFamily: 'Lemon Milk', fontWeight: 300 }}>DEVELOPMENT</h2>
                         <hr className="border-4 border-blue-200 mb-4"></hr>
-                        <h3 className="pl-4 font-medium text-[1.5rem] text-white">EduQuest - <span className="font-normal italic">Educational Tool</span></h3>
+                        <h3 className="pl-4 font-medium text-[1.5rem] text-center lg:text-left md:text-left sm:text-left text-white">EduQuest - <span className="font-normal italic">Educational Tool</span></h3>
                         <div className="flex justify-center items-center">
                             <img src={`${process.env.PUBLIC_URL}/images/eduquestlogo.webp`} className="w-[17rem] rounded-md" alt="Mark Lovesey" />
                         </div>
@@ -58,7 +58,7 @@ const PortfolioPage = () => {
                         </div>
                         <div className="flex justify-center items-center mb-6">
                         
-                            <div className="bg-amber-400 rounded-xl min-w-[80%] p-4">
+                            <div className="bg-amber-400 rounded-xl min-w-[80%] max-w-[80%] p-4">
                                 <p className="text-white text-left"><strong>Stack:</strong> NEXT.js, Tailwind CSS, Typescript, React<br></br>
                                     <strong>Role:</strong> Scrum Master, Full Stack Development, Design, and Documentation<br></br>
                                     <a className="underline" target="_blank" href="https://github.com/chpsmstr/eduQuest">Repository</a></p>
@@ -72,7 +72,7 @@ const PortfolioPage = () => {
                             </div>
                         </div>
                         <hr className="border-4 border-blue-200 mb-4"></hr>
-                        <h3 className="pl-4 font-medium text-[1.5rem] text-white">Inflation Station - <span className="font-normal italic">Grocery Price Tracker & Community Hub</span></h3>
+                        <h3 className="pl-4 font-medium text-[1.5rem] text-white text-center lg:text-left md:text-left sm:text-left">Inflation Station - <span className="font-normal italic">Grocery Price Tracker & Community Hub</span></h3>
                         <div className="flex justify-center items-center">
                             <img src={`${process.env.PUBLIC_URL}/images/islogo.webp`} className="w-[12rem] p-4 rounded-md" alt="Mark Lovesey" />
                         </div>
@@ -80,7 +80,7 @@ const PortfolioPage = () => {
                             <PhotoCarousel images={iSImages} />
                         </div>
                         <div className="flex justify-center items-center mb-6">
-                            <div className="bg-green-400 rounded-xl min-w-[80%] p-4">
+                            <div className="bg-green-400 rounded-xl min-w-[80%] max-w-[80%] p-4">
                                 <p className="text-white text-left"><strong>Stack:</strong> PHP, HTML5, CSS3, JavaScript, JQuery, MySQL<br></br>
                                     <strong>Role:</strong> Lead Frontend Development, Backend Development, Design, Documentation<br></br>
                                     <a className="underline" target="_blank" href="https://github.com/Daniel-Penner/Inflation-Station">Repository</a></p>
@@ -93,7 +93,7 @@ const PortfolioPage = () => {
                             </div>
                         </div>
                         <hr className="border-4 border-blue-200 mb-4"></hr>
-                        <h3 className="pl-4 font-medium text-[1.5rem] text-white">IRIS - <span className="font-normal italic">Insurance Review & Inspection System</span></h3>
+                        <h3 className="pl-4 font-medium text-[1.5rem] text-white text-center lg:text-left md:text-left sm:text-left">IRIS - <span className="font-normal italic">Insurance Review & Inspection System</span></h3>
                         <div className="flex justify-center items-center">
                             <img src={`${process.env.PUBLIC_URL}/images/white_iris_transparent.webp`} className="w-[13rem] p-6 rounded-md" alt="Mark Lovesey" />
                         </div>
@@ -101,7 +101,7 @@ const PortfolioPage = () => {
                             <PhotoCarousel images={irisImages} />
                         </div>
                         <div className="flex justify-center items-center mb-6">
-                            <div className="bg-sky-400 rounded-xl min-w-[80%] p-4">
+                            <div className="bg-sky-400 rounded-xl min-w-[80%] max-w-[80%] p-4">
                                 <p className="text-white text-left"><strong>Stack:</strong> Express.js, React, Tailwind CSS, JavaScript, MySQL<br></br>
                                     <strong>Role:</strong> Full Stack Development, UX/UI Design, & Documentation<br></br>
                                     Repository</p>

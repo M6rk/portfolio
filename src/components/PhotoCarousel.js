@@ -21,28 +21,28 @@ const PhotoCarousel = ({ images }) => {
     }, [images.length]);
 
     return (
-        <div className="relative w-full w-[35rem] max-w-[40rem] mx-auto p-4 rounded-lg bg-white">
+        <div className="relative w-full max-w-[22rem] sm:max-w-[30rem] md:max-w-[35rem] lg:max-w-[40rem] mx-auto p-4 rounded-lg bg-white drop-shadow-lg">
             <div className="relative w-full flex justify-center items-center">
                 {images.map((image, index) => (
                     <img
                         key={index}
                         src={image}
                         alt={`Slide ${index}`}
-                        className={`w-[40rem] h-[19rem] transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
+                        className={`w-[25rem] h-[10rem] lg:h-[19rem] lg:w-[40rem] md:h-[18rem] md:w-[35rem] sm:h-[13rem] sm:w-[30rem]  rounded-md transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
                         style={{ display: index === currentIndex ? 'block' : 'none' }}
                     />
                 ))}
-                <button
+              <button
                     onClick={handlePrevClick}
-                    className="absolute left-0 top-1/2 transform -translate-y-1/2 text-white p-2 rounded-full"
+                    className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-stone-500 hover:bg-stone-600 text-white p-2 rounded-full"
                 >
-                    &#9664;
+                    <img src={`${process.env.PUBLIC_URL}/icons/next.svg`} alt="Previous" className="w-6 h-6 invert transform rotate-180" />
                 </button>
                 <button
                     onClick={handleNextClick}
-                    className="absolute right-0 top-1/2 transform -translate-y-1/2 text-white p-2 rounded-full"
+                    className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-stone-500 hover:bg-stone-600 text-white p-2 rounded-full"
                 >
-                    &#9654;
+                    <img src={`${process.env.PUBLIC_URL}/icons/next.svg`} alt="Next" className="w-6 h-6 invert" />
                 </button>
             </div>
         </div>
