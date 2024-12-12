@@ -18,7 +18,7 @@ function NavBar() {
         <ul className="flex space-x-8 text-white">
           <li
             className="cursor-pointer text-xl font-light transition-all duration-200 hover:opacity-75"
-            onClick={() => navigate('/portfolio')}
+            onClick={() => navigate('/')}
           >
             Home
           </li>
@@ -30,7 +30,7 @@ function NavBar() {
           </li>
           <li
             className="cursor-pointer text-xl font-light transition-all duration-200 hover:opacity-75"
-            onClick={() => navigate('/projects')}
+            onClick={() => navigate('/portfolio')}
           >
             Portfolio
           </li>

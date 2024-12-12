@@ -13,12 +13,12 @@ import ContactPage from './pages/ContactPage';
 const router = createBrowserRouter([
   {
     // '/' path is the homepage/landingpage, TempHomePage should be replaced with the landing page
-    path : '/portfolio',
+    path : '/',
     element : <HomePage />
   },
   {
     //portfolio page
-    path : '/projects',
+    path : '/portfolio',
     element : <PortfolioPage />
   },
   {

@@ -59,7 +59,7 @@ const AboutPage = () => {
                             </p>
                             <hr></hr>
                             <div className="flex justify-center items-center p-2 space-x-6">
-                                <AnimatedButton text="Portfolio" link="projects" color1="#60A5FA" color2="#5492dd" textColor="#ffffff" />
+                                <AnimatedButton text="Portfolio" link="portfolio" color1="#60A5FA" color2="#5492dd" textColor="#ffffff" />
                                 <AnimatedButton text="Resume" link="resume" color1="#ffff14" color2="#d2dd56" textColor="#2d2d2d" />
                             </div>
                             <hr></hr>
