@@ -113,7 +113,7 @@ const PortfolioPage = () => {
                                     Myself and my four team members are working on this application for a total of two semesters in competition with other groups for our client BFL Canada.</p>
                             </div>
                         </div>
-                        <h2 className="text-[2.5rem] text-left text-stone-900 text-white" style={{ fontFamily: 'Lemon Milk', fontWeight: 300 }}>DESIGN</h2>
+                        <h2 className="text-[2.5rem] text-left text-stone-900 text-white text-center lg:text-left md:text-left sm:text-left" style={{ fontFamily: 'Lemon Milk', fontWeight: 300 }}>DESIGN</h2>
                         <hr className="border-4 border-blue-200 mb-4"></hr>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             {designImages.map((image, index) => (
