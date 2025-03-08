@@ -13,13 +13,10 @@ const HomePage = () => {
                 <div className="flex justify-center items-center">
                     <h1 className="text-white text-[1.1rem] lg:text-[1.35rem] md:text-[1.35] sm:text-[1.3] font-normal text-center">4th Year Computer Science Major and English Minor at UBC</h1>
                 </div>
-                <div className="flex justify-center items-center pt-1">
+                <div className="flex justify-center items-center mt-1">
                     <h2 className="text-white text-[1.1rem] lg:text-[1.25rem] md:text-[1.25] sm:text-[1.2] font-extralight text-center">
                         Bridging <span className="font-semibold text-white underline decoration-amber-300 decoration-double">Tech</span> & <span className="font-semibold underline text-white decoration-green-300 decoration-double">Humanities</span>
                     </h2>
-                </div>
-                <div className="flex justify-center items-center p-16">
-                    <a href="/about"><button className="button-30" role="button">About Me</button></a>
                 </div>
             </div>
             {/*Shape divider*/}
@@ -28,7 +25,7 @@ const HomePage = () => {
                     <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="fill-blue-400"></path>
                 </svg>
             </div>
-            <div className="bg-white p-16">
+            <div className="bg-white p-10">
                 <div className="flex justify-center items-center space-x-16">
                     <a href="https://github.com/M6rk" target="_blank">
                         <img
