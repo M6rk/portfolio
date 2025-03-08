@@ -47,3 +47,23 @@
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
 }
+
+.custom-shape-divider-top-1741332977 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1741332977 svg {
+  position: relative;
+  display: block;
+  width: calc(103% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-top-1741332977 .shape-fill {
+  fill: #60A5FA;
+}
