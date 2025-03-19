@@ -86,7 +86,6 @@ const HomePage = () => {
                                 </svg>
                             </div>
                         </a>
-
                         {/* Gmail/Email */}
                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mark.lovesey03@gmail.com&su=Hey%20Mark!" target="_blank" className="mt-10">
                             <div className="w-16 cursor-pointer hover:scale-110 transition-transform duration-300 bg-gray-100 dark:bg-[#121212] dark:hover:bg-[#1E1E1E] p-4 rounded-xl">
