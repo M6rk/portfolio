@@ -25,7 +25,7 @@ const HomePage = () => {
     };
     return (
         <>
-            <div className="bg-white dark:bg-[#141414]">
+            <div className="bg-center bg-cover bg-white dark:bg-[#141414]">
                 <div className="flex flex-col h-[25rem] bg-center bg-cover bg-blue-400 dark:bg-[#101010] relative">
                     <button
                         onClick={scrollToTop}
@@ -97,7 +97,7 @@ const HomePage = () => {
                         </a>
                     </div>
                 </div>
-                <div className="bg-white dark:bg-[#141414] justify-items-center">
+                <div className="bg-white dark:bg-[#141414] flex justify-center">
                     <InfiniteScroll />
                 </div>
                 <div className="absolute w-full overflow-hidden leading-none mt-[4.1rem] md:mt-16 lg:mt-16 sm:mt-16">
@@ -105,9 +105,9 @@ const HomePage = () => {
                         <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="fill-blue-400 dark:fill-[#101010]"></path>
                     </svg>
                 </div>
-                <div className="bg-blue-400 dark:bg-[#101010] mt-[5.5rem] lg:mt-[7rem] md:mt-[7.8rem] pb-[25rem]">
+                <div className="bg-blue-400 dark:bg-[#101010] mt-[5.5rem] lg:mt-[7rem] md:mt-[7.8rem] pb-[5rem]">
                     <section id="about"></section>
-                    <div className="max-w-[85%] lg:max-w-[50%] mx-auto px-4 transition-all duration-200">
+                    <div className="max-w-[65%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200">
                         {/*About me*/}
                         <h1 className="text-white dark:text-[#DFDFDF] text-left text-[2.1rem] transition-all duration-200 mb-3 pt-8 px-6">About Me</h1>
                         <p className="text-white text-[1rem] dark:text-[#959595] transition-all duration-200 px-6">
@@ -138,10 +138,10 @@ const HomePage = () => {
                         </div>
                     </div>
                     <section id="portfolio"></section>
-                    <hr className="border-white dark:border-[#959595] border-t-2 w-[90%] max-w-[75%] lg:max-w-[50%] mx-auto my-8" />
-                    
+                    <hr className="border-white dark:border-[#959595] border-t-2 max-w-[60%] lg:max-w-[70%] md:max-w-[55%] sm:max-w-[55%] mx-auto my-8" />
+
                     {/* Cards section */}
-                    <div className="max-w-[85%] lg:max-w-[50%] mx-auto px-4 transition-all duration-200">
+                    <div className="max-w-[65%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200">
                         <h2 className="text-white dark:text-[#DFDFDF] text-left text-[2rem] transition-all duration-200 mb-6 px-6">Projects</h2>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                             {/* IRIS */}
@@ -225,25 +225,47 @@ const HomePage = () => {
                         </div>
                     </div>
                     <hr className="border-white dark:border-[#959595] border-t-2 max-w-[75%] lg:max-w-[50%] mx-auto my-8" />
-                    <div className="max-w-[85%] lg:max-w-[50%] mx-auto px-4 transition-all duration-200">
+                    <div className="max-w-[65%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200">
                         {/* Contact Text */}
                         <div className="flex flex-col lg:flex-row gap-8">
                             <section id="contact"></section>
-                            <div className="lg:w-1/2">
+                            <div className="lg:w-[25rem]">
                                 <h2 className="text-white dark:text-[#DFDFDF] text-left text-[2rem] transition-all duration-200 mb-2">Contact</h2>
                                 <p className="text-white text-[1rem] dark:text-[#959595] transition-all duration-200">
                                     Have a question for me? Feel free to contact me here or at <span>mark.lovesey03@gmail.com</span>.
                                 </p>
                             </div>
                             {/* Contact Form */}
-                            <div className="lg:w-2/3">
+                            <div className="lg:w-1/2">
                                 <div className="bg-white dark:bg-[#1A1A1A] rounded-xl overflow-hidden shadow-lg p-6 border-[0.1rem] border-[#5093e5] dark:border-[#1A1A1A]">
-                                    <form className="space-y-4">
+                                    <form
+                                        id="bootstrapForm"
+                                        className="space-y-4"
+                                        onSubmit={(e) => {
+                                            e.preventDefault(); // Prevent default form submission
+                                            const form = e.target;
+                                            const formData = new FormData(form);
+
+                                            // Submit the form data using fetch
+                                            fetch("https://docs.google.com/forms/d/e/1FAIpQLScRuYM6GkbNGqPrQgnelPAVzgTsu4TRt2LNmUz2AbtlVdyDxg/formResponse", {
+                                                method: "POST",
+                                                body: formData,
+                                                mode: "no-cors", // Prevent CORS issues
+                                            })
+                                                .then(() => {
+                                                    alert("Form submitted successfully. Thank you!"); // Show success message
+                                                    form.reset(); // Reset the form fields
+                                                })
+                                                .catch(() => {
+                                                    alert("There was an error submitting the form. Please try again later.");
+                                                });
+                                        }}
+                                    >
                                         <div>
                                             <input
                                                 type="email"
-                                                id="email"
-                                                name="email"
+                                                id="300388543"
+                                                name="entry.300388543"
                                                 className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 border-gray-300 dark:border-gray-600 bg-white dark:bg-[#121212] text-gray-900 dark:text-white focus:outline-none transition-colors duration-200"
                                                 placeholder="Email"
                                                 required
@@ -252,17 +274,16 @@ const HomePage = () => {
                                         <div>
                                             <input
                                                 type="text"
-                                                id="subject"
-                                                name="subject"
+                                                id="1687892361"
+                                                name="entry.1687892361"
                                                 className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 border-gray-300 dark:border-gray-600 bg-white dark:bg-[#121212] text-gray-900 dark:text-white focus:outline-none transition-colors duration-200"
                                                 placeholder="Subject"
-                                                required
                                             />
                                         </div>
                                         <div>
                                             <textarea
-                                                id="message"
-                                                name="message"
+                                                id="203073163"
+                                                name="entry.203073163"
                                                 rows="6"
                                                 className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 border-gray-300 dark:border-gray-600 bg-white dark:bg-[#121212] text-gray-900 dark:text-white focus:outline-none transition-colors duration-200 resize-none"
                                                 placeholder="Your message"
