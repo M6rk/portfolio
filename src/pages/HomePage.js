@@ -29,7 +29,7 @@ const HomePage = () => {
                 <div className="flex flex-col h-[25rem] bg-center bg-cover bg-blue-400 dark:bg-[#101010] relative">
                     <button
                         onClick={scrollToTop}
-                        className={`fixed bottom-6 right-6 z-50 bg-[#599aea] dark:bg-[#1A1A1A] hover:bg-[#4a89d9] dark:hover:bg-[#252525] text-white p-3 rounded-full shadow-lg transition-all duration-300 ${showScrollTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}
+                        className={`fixed bottom-6 right-6 z-50 bg-[#599aea] dark:bg-[#262525] dark:bg-opacity-75 hover:bg-[#4a89d9] dark:hover:bg-[#252525] text-white p-3 rounded-full shadow-lg transition-all duration-300 ${showScrollTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}
                         aria-label="Scroll to top"
                     >
                         <svg
@@ -50,13 +50,13 @@ const HomePage = () => {
                     <NavBar />
                     <section id="home"></section>
                     <div className="flex justify-center items-center mt-8">
-                        <h1 className="text-white dark:text-[#DFDFDF] transition-all duration-200 text-[3rem] font-light text-center drop-shadow-md lg:text-[5rem] md:text-[4.7rem] sm:text-[4.5rem]">Mark Lovesey</h1>
+                        <h1 className="text-white dark:text-[#DFDFDF] transition-all duration-200 text-[2.8rem] font-light text-center drop-shadow-md lg:text-[5rem] md:text-[4.7rem] sm:text-[4.5rem]">Mark Lovesey</h1>
                     </div>
                     <div className="flex justify-center items-center">
-                        <h1 className="text-white dark:text-[#959595] transition-all duration-200 text-[1.1rem] lg:text-[1.35rem] md:text-[1.35] sm:text-[1.3] font-normal text-center">4th Year Computer Science Major and English Minor at UBC</h1>
+                        <h1 className="text-white dark:text-[#959595] transition-all duration-200 text-[1rem] lg:text-[1.35rem] md:text-[1.35] sm:text-[1.3] font-normal text-center">4th Year Computer Science Major and English Minor at UBC</h1>
                     </div>
                     <div className="flex justify-center items-center mt-1">
-                        <h2 className="text-white dark:text-[#959595] transition-all duration-200 text-[1.1rem] lg:text-[1.25rem] md:text-[1.25] sm:text-[1.2] font-extralight text-center">
+                        <h2 className="text-white dark:text-[#959595] transition-all duration-200 text-[1.0rem] lg:text-[1.25rem] md:text-[1.25] sm:text-[1.2] font-extralight text-center">
                             Bridging <span className="font-semibold text-white dark:text-[#DFDFDF] underline decoration-amber-300 decoration-double">Tech</span> & <span className="font-semibold underline text-white dark:text-[#DFDFDF] decoration-green-300 decoration-double">Humanities</span>
                         </h2>
                     </div>
@@ -106,9 +106,9 @@ const HomePage = () => {
                 </div>
                 <div className="bg-blue-400 dark:bg-[#101010] mt-[5.5rem] lg:mt-[7rem] md:mt-[7.8rem] pb-[5rem]">
                     <section id="about"></section>
-                    <div className="max-w-[65%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200">
+                    <div className="max-w-[85%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200 mt-16">
                         {/*About me*/}
-                        <h1 className="text-white dark:text-[#DFDFDF] text-left text-[2.1rem] transition-all duration-200 mb-3 pt-8 px-6">About Me</h1>
+                        <h1 className="text-white font-semibold dark:text-[#DFDFDF] text-left text-[2rem] transition-all duration-200 mb-2 pt-8 px-6">About Me</h1>
                         <p className="text-white text-[1rem] dark:text-[#959595] transition-all duration-200 px-6">
                             Hi, I'm Mark. I'm currently pursuing a Bachelor of Arts with a Major in Computer Science and a Minor in English at UBC.
                             My native language is English, but I am also fluent in French. In my free time I enjoy playing guitar, hiking, biking, and camping.
@@ -116,7 +116,7 @@ const HomePage = () => {
                         {/*Computer Science*/}
                         <div className="flex flex-col lg:flex-row lg:gap-16">
                             <div className="p-6">
-                                <h2 className="text-white dark:text-[#DFDFDF] text-left text-[1.4rem] transition-all duration-200 mt-2 mb-3">
+                                <h2 className="text-white font-medium dark:text-[#DFDFDF] text-left text-[1.4rem] transition-all duration-200 mt-2 mb-2">
                                     Computer Science
                                 </h2>
                                 <p className="text-white text-[1rem] dark:text-[#959595] transition-all duration-200">
@@ -126,7 +126,7 @@ const HomePage = () => {
                             </div>
                             {/*English*/}
                             <div className="p-6">
-                                <h2 className="text-white dark:text-[#DFDFDF] text-left text-[1.4rem] transition-all duration-200 mt-2 mb-3">
+                                <h2 className="text-white font-medium dark:text-[#DFDFDF] text-left text-[1.4rem] transition-all duration-200 mt-2 mb-2">
                                     English
                                 </h2>
                                 <p className="text-white text-[1rem] dark:text-[#959595] transition-all duration-200">
@@ -136,15 +136,19 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
-                    <section id="portfolio"></section>
-                    <hr className="border-white dark:border-[#959595] border-t-2 max-w-[65%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto my-8" />
 
+                    <hr className="border-white dark:border-[#959595] border-t-2 max-w-[65%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto mt-4 mb-4" />
+                    <section id="portfolio"></section>
                     {/* Cards section */}
-                    <div className="max-w-[65%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[50%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200">
-                        <h2 className="text-white dark:text-[#DFDFDF] text-left text-[2rem] transition-all duration-200 mb-6 px-6">Projects</h2>
+                    <div>
+                        <div className="max-w-[85%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200 mt-8">
+                            <h2 className="text-white font-semibold dark:text-[#DFDFDF] text-left text-[2rem] mb-6 px-6 mt-8">Projects</h2>
+                        </div>
+                    </div>
+                    <div className="max-w-[85%] xl:max-w-[50%] lg:max-w-[75%] md:max-w-[50%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                             {/* IRIS */}
-                            <div className="bg-white dark:bg-[#1A1A1A] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-[#252525]">
+                            <div className="bg-white dark:bg-[#1A1A1A] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-[#5B9CEE] dark:border-[#252525]">
                                 {/* Image with overlay on hover */}
                                 <div className="relative overflow-hidden group">
                                     <img className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" src="/images/iris1.gif" alt="IRIS" />
@@ -159,7 +163,7 @@ const HomePage = () => {
                                 {/* Content */}
                                 <div className="p-6">
                                     {/* Title */}
-                                    <h3 className="font-bold text-xl mb-2 text-gray-800 dark:text-white">Insurance Review & Analysis System</h3>
+                                    <h3 className="dark:text-[#DFDFDF] font-medium text-xl mb-2 text-gray-800">Insurance Review & Analysis System</h3>
 
                                     {/* Tech stack tags */}
                                     <div className="flex flex-wrap mb-4">
@@ -172,14 +176,54 @@ const HomePage = () => {
 
                                     {/* Role */}
                                     <div className="mb-4">
-                                        <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                                        <p className="text-sm font-medium text-gray-700 dark:text-[#DFDFDF]">
                                             <span className="text-blue-600 dark:text-blue-400">Role:</span> Full Stack Development, UX/UI Design, & Documentation
                                         </p>
                                     </div>
 
                                     {/* Description */}
-                                    <p className="text-gray-700 dark:text-gray-300 mb-4">
+                                    <p className="text-gray-700 dark:text-gray-300 mb-4 text-[0.95rem]">
                                         IRIS is an insurance review and analysis system created during my capstone group project. Myself and my four team members are working on this application for a total of two semesters in competition with other groups for our client BFL Canada.
+                                    </p>
+                                </div>
+                            </div>
+                            {/* IRIS */}
+                            <div className="bg-white dark:bg-[#1A1A1A] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-[#252525]">
+                                {/* Image with overlay on hover */}
+                                <div className="relative overflow-hidden group">
+                                    <img className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" src="/images/is2.png" alt="IRIS" />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                                        <a href="https://github.com/COSC-499-W2024/capstone-project-team-1-003" target="_blank" rel="noopener noreferrer" className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 flex items-center">
+                                            <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+                                            View Code
+                                        </a>
+                                    </div>
+                                </div>
+                                {/* Content */}
+                                <div className="p-6">
+                                    {/* Title */}
+                                    <h3 className="dark:text-[#DFDFDF] font-medium text-xl mb-2 text-gray-800">Inflation Station</h3>
+
+                                    {/* Tech stack tags */}
+                                    <div className="flex flex-wrap mb-4">
+                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">PHP</span>
+                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">HTML5</span>
+                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">CSS3</span>
+                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">JavaScript</span>
+                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">MySQL</span>
+                                    </div>
+
+                                    {/* Role */}
+                                    <div className="mb-4">
+                                        <p className="text-sm font-medium text-gray-700 dark:text-[#DFDFDF]">
+                                            <span className="text-blue-600 dark:text-blue-400">Role:</span> Lead Frontend Development, Backend Development, Design, Documentation
+                                        </p>
+                                    </div>
+
+                                    {/* Description */}
+                                    <p className="text-gray-700 dark:text-gray-300 mb-4 text-[0.95rem]">
+                                        Inflation Station is a grocery price tracker web-app that enables users to rate products and view product price fluctuations in real-time.
+                                        The application features an administrator dashboard to manage user interactions, approve the publication of new projects, and view graphed site analytics.
                                     </p>
                                 </div>
                             </div>
@@ -198,7 +242,7 @@ const HomePage = () => {
                                 {/* Content */}
                                 <div className="p-6">
                                     {/* Title */}
-                                    <h3 className="font-bold text-xl mb-2 text-gray-800 dark:text-white">EduQuest</h3>
+                                    <h3 className="font-medium text-xl mb-2 text-gray-800 text-gray-800 dark:text-[#DFDFDF]">EduQuest</h3>
 
                                     {/* Tech stack tags */}
                                     <div className="flex flex-wrap mb-4">
@@ -211,25 +255,73 @@ const HomePage = () => {
 
                                     {/* Role */}
                                     <div className="mb-4">
-                                        <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                                        <p className="text-sm font-medium text-gray-700 dark:text-[#DFDFDF]">
                                             <span className="text-blue-600 dark:text-blue-400">Role:</span> Scrum Master, Full Stack Development, Design, and Documentation
                                         </p>
                                     </div>
                                     {/* Description */}
-                                    <p className="text-gray-700 dark:text-gray-300 mb-4">
+                                    <p className="text-gray-700 dark:text-gray-300 mb-4 dark:text-[#DFDFDF] text-[0.95rem]">
                                         EduQuest is an innovative student e-learning platform where teachers can operate classroom spaces with the creation of multiple-choice quizzes and asynchronous essay responses. Students can track their grades, interact with other students and complete assignments.
+                                    </p>
+                                </div>
+                            </div>
+                            {/* TBA */}
+                            <div className="bg-white dark:bg-[#1A1A1A] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-[#252525]">
+                                {/* Image with overlay on hover */}
+                                <div className="relative overflow-hidden group">
+                                    <img className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" src="images/wip.png" alt="Coming Soon" />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                                        <a disabled rel="noopener noreferrer" className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 flex items-center">
+                                            <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+                                            View Code
+                                        </a>
+                                    </div>
+                                </div>
+                                {/* Content */}
+                                <div className="p-6">
+                                    {/* Title */}
+                                    <h3 className="font-medium text-xl mb-2 text-gray-800 dark:text-[#DFDFDF]">TBA</h3>
+
+                                    {/* Tech stack tags */}
+                                    <div className="flex flex-wrap mb-4">
+                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎  </span>
+                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎ </span>
+                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎ </span>
+                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎  </span>
+                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎  </span>
+                                    </div>
+
+                                    {/* Role */}
+                                    <div className="mb-4">
+                                        <p className="text-sm font-medium text-gray-700 dark:text-[#DFDFDF]">
+                                            <span className="text-blue-600 dark:text-blue-400">Role:</span> TBA
+                                        </p>
+                                    </div>
+                                    {/* Description */}
+                                    <p className="text-gray-700 dark:text-gray-300 mb-4 dark:text-[#DFDFDF] text-[0.95rem]">
+                                        Do you have a project in mind? Let's work together! Feel free to     <span
+                                            className="text-blue-500 cursor-pointer hover:underline"
+                                            onClick={() => {
+                                                const section = document.getElementById('contact');
+                                                if (section) {
+                                                    section.scrollIntoView({ behavior: 'smooth' });
+                                                }
+                                            }}
+                                        >
+                                            contact me
+                                        </span>..
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <hr className="border-white dark:border-[#959595] border-t-2 max-w-[65%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto my-8" />
-                    <div className="max-w-[65%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200">
+                    <hr className="border-white dark:border-[#959595] border-t-2 max-w-[65%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto mt-20 mb-4" />
+                    <div className="max-w-[85%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200 mt-8">
                         {/* Contact Text */}
-                        <div className="flex flex-col lg:flex-row gap-8">
+                        <div className="flex flex-col lg:flex-row gap-4">
                             <section id="contact"></section>
-                            <div className="lg:w-[25rem]">
-                                <h2 className="text-white dark:text-[#DFDFDF] text-left text-[2rem] transition-all duration-200 mb-2">Contact</h2>
+                            <div className="px-6 xl:px-1 lg:px-1">
+                                <h2 className="text-white font-semibold dark:text-[#DFDFDF] text-left text-[2rem] transition-all duration-200 mb-1">Contact</h2>
                                 <p className="text-white text-[1rem] dark:text-[#959595] transition-all duration-200">
                                     Have a question for me? Feel free to contact me here or at <span>mark.lovesey03@gmail.com</span>.
                                 </p>
