@@ -3,34 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
-
 import HomePage from './pages/HomePage';
-import PortfolioPage from './pages/PortfolioPage';
-import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
+import InvalidRoute from './pages/InvalidRoute';
 
 const router = createBrowserRouter([
   {
-    // '/' path is the homepage/landingpage, TempHomePage should be replaced with the landing page
+    // '/' path -> homepage
     path : '/',
     element : <HomePage />
   },
   {
-    //portfolio page
-    path : '/portfolio',
-    element : <PortfolioPage />
+    path: '*',
+    element: <InvalidRoute />, // Replace with your 404 component
   },
-  {
-    //portfolio page
-    path : '/about',
-    element : <AboutPage />
-  },
-  {
-    //portfolio page
-    path : '/contact',
-    element : <ContactPage />
-  }
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<RouterProvider router={router}/>)
