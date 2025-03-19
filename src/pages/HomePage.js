@@ -53,10 +53,10 @@ const HomePage = () => {
                         <h1 className="text-white dark:text-[#DFDFDF] transition-all duration-200 text-[2.8rem] font-light text-center drop-shadow-md lg:text-[5rem] md:text-[4.7rem] sm:text-[4.5rem]">Mark Lovesey</h1>
                     </div>
                     <div className="flex justify-center items-center">
-                        <h1 className="text-white dark:text-[#959595] transition-all duration-200 text-[1rem] lg:text-[1.35rem] md:text-[1.35] sm:text-[1.3] font-normal text-center">4th Year Computer Science Major and English Minor at UBC</h1>
+                        <h1 className="text-white dark:text-[#959595] transition-all duration-200 w-[20rem] lg:w-[25rem] md:w-[20rem] sm:w-[20rem] text-[1.1rem] lg:text-[1.35rem] md:text-[1.35] sm:text-[1.3] font-normal text-center">4th Year Computer Science Major and English Minor at UBC</h1>
                     </div>
                     <div className="flex justify-center items-center mt-1">
-                        <h2 className="text-white dark:text-[#959595] transition-all duration-200 text-[1.0rem] lg:text-[1.25rem] md:text-[1.25] sm:text-[1.2] font-extralight text-center">
+                        <h2 className="text-white dark:text-[#959595] transition-all duration-200 text-[1.1rem] lg:text-[1.25rem] md:text-[1.25] sm:text-[1.2] font-extralight text-center">
                             Bridging <span className="font-semibold text-white dark:text-[#DFDFDF] underline decoration-amber-300 decoration-double">Tech</span> & <span className="font-semibold underline text-white dark:text-[#DFDFDF] decoration-green-300 decoration-double">Humanities</span>
                         </h2>
                     </div>
