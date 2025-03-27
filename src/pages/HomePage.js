@@ -145,14 +145,14 @@ const HomePage = () => {
                             <h2 className="text-white font-semibold dark:text-[#DFDFDF] text-left text-[2rem] mb-6 px-6 mt-8">Projects</h2>
                         </div>
                     </div>
-                    <div className="max-w-[85%] xl:max-w-[50%] lg:max-w-[75%] md:max-w-[50%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200">
+                    <div className="max-w-[90%] xl:max-w-[53%] lg:max-w-[80%] md:max-w-[50%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                             {/* IRIS */}
                             <div className="bg-white dark:bg-[#1A1A1A] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-[#5B9CEE] dark:border-[#252525]">
                                 {/* Image with overlay on hover */}
                                 <div className="relative overflow-hidden group">
                                     <img className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" src="/images/iris1.gif" alt="IRIS" />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
                                         <a href="https://github.com/COSC-499-W2024/capstone-project-team-1-003" target="_blank" rel="noopener noreferrer" className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 flex items-center">
                                             <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
                                             View Code
@@ -192,7 +192,7 @@ const HomePage = () => {
                                 {/* Image with overlay on hover */}
                                 <div className="relative overflow-hidden group">
                                     <img className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" src="/images/is2.png" alt="IRIS" />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
                                         <a href="https://github.com/COSC-499-W2024/capstone-project-team-1-003" target="_blank" rel="noopener noreferrer" className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 flex items-center">
                                             <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
                                             View Code
@@ -232,7 +232,7 @@ const HomePage = () => {
                                 {/* Image with overlay on hover */}
                                 <div className="relative overflow-hidden group">
                                     <img className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" src="/images/eduquestgif1.gif" alt="Project 2" />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
                                         <a href="https://github.com/chpsmstr/eduQuest.git" target="_blank" rel="noopener noreferrer" className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 flex items-center">
                                             <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
                                             View Code
@@ -270,12 +270,7 @@ const HomePage = () => {
                                 {/* Image with overlay on hover */}
                                 <div className="relative overflow-hidden group">
                                     <img className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" src="images/wip.png" alt="Coming Soon" />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
-                                        <a disabled rel="noopener noreferrer" className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 flex items-center">
-                                            <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
-                                            View Code
-                                        </a>
-                                    </div>
+                                 
                                 </div>
                                 {/* Content */}
                                 <div className="p-6">
@@ -299,7 +294,8 @@ const HomePage = () => {
                                     </div>
                                     {/* Description */}
                                     <p className="text-gray-700 dark:text-gray-300 mb-4 dark:text-[#DFDFDF] text-[0.95rem]">
-                                        Do you have a project in mind? Let's work together! Feel free to     <span
+                                        Do you have a project in mind? Let's work together! Feel free to &nbsp;      
+                                        <span
                                             className="text-blue-500 cursor-pointer hover:underline"
                                             onClick={() => {
                                                 const section = document.getElementById('contact');
@@ -309,7 +305,7 @@ const HomePage = () => {
                                             }}
                                         >
                                             contact me
-                                        </span>..
+                                        </span>.
                                     </p>
                                 </div>
                             </div>
@@ -323,11 +319,11 @@ const HomePage = () => {
                             <div className="px-6 xl:px-1 lg:px-1">
                                 <h2 className="text-white font-semibold dark:text-[#DFDFDF] text-left text-[2rem] transition-all duration-200 mb-1">Contact</h2>
                                 <p className="text-white text-[1rem] dark:text-[#959595] transition-all duration-200">
-                                    Have a question for me? Feel free to contact me here or at <span>mark.lovesey03@gmail.com</span>.
+                                    Have a question for me? Feel free to contact me here or at <span className="underline">mark.lovesey03@gmail.com</span>.
                                 </p>
                             </div>
                             {/* Contact Form */}
-                            <div className="lg:w-1/2">
+                            <div className="xl:w-[55%] lg:w-[100%]">
                                 <div className="bg-white dark:bg-[#1A1A1A] rounded-xl overflow-hidden shadow-lg p-6 border-[0.1rem] border-[#5093e5] dark:border-[#1A1A1A]">
                                     <form
                                         id="bootstrapForm"

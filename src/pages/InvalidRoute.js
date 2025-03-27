@@ -25,7 +25,7 @@ const InvalidRoute = () => {
     return (
         <div className="flex flex-col items-center justify-center h-screen bg-gray-100 dark:bg-[#101010] text-gray-800 dark:text-white">
             <h1 className="text-6xl font-bold mb-4">404</h1>
-            <p className="text-xl mb-6">Oops! The page you're looking for doesn't exist.</p>
+            <p className="text-xl text-center mb-6">Oops! The page you're looking for doesn't exist.</p>
             <button
                 onClick={() => navigate('/')}
                 className="px-6 py-3 bg-[#599aea] hover:bg-[#4a89d9] dark:bg-[#161616] dark:hover:bg-[#252525] text-white font-medium rounded-lg shadow-md transition-all duration-300"
