@@ -14,7 +14,7 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
       },
       animation: {
-        'infinite-scroll': 'infinite-scroll 35s linear infinite',
+        'infinite-scroll': 'infinite-scroll 60s linear infinite',
       },
       keyframes: {
         'infinite-scroll': {
