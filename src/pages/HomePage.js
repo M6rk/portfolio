@@ -266,43 +266,34 @@ const HomePage = () => {
                             <div className="bg-white dark:bg-[#1A1A1A] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-[#5B9CEE] dark:border-[#252525]">
                                 {/* Image with overlay on hover */}
                                 <div className="relative overflow-hidden group">
-                                    <img className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" src="images/wip.png" alt="Coming Soon" />
-
+                                    <img className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" src="/images/WRcover.webp" alt="Project 2" />
+                                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                                        <a href="https://github.com/M6rk/weathered-roads" target="_blank" rel="noopener noreferrer" className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 flex items-center">
+                                            <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+                                            View Code
+                                        </a>
+                                    </div>
                                 </div>
                                 {/* Content */}
                                 <div className="p-6">
                                     {/* Title */}
-                                    <h3 className="font-medium text-xl mb-2 text-gray-800 dark:text-[#DFDFDF]">TBA</h3>
+                                    <h3 className="font-medium text-xl mb-2 text-gray-800 dark:text-[#DFDFDF]">Weathered Roads</h3>
 
                                     {/* Tech stack tags */}
                                     <div className="flex flex-wrap mb-4">
-                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎  </span>
-                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎ </span>
-                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎ </span>
-                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎  </span>
-                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎  </span>
+                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">C#</span>
+
                                     </div>
 
                                     {/* Role */}
                                     <div className="mb-4">
                                         <p className="text-sm font-medium text-gray-700 dark:text-[#DFDFDF]">
-                                            <span className="text-blue-600 dark:text-blue-400">Role:</span> TBA
+                                            <span className="text-blue-600 dark:text-blue-400">Role:</span> Developer
                                         </p>
                                     </div>
                                     {/* Description */}
                                     <p className="text-gray-700 dark:text-gray-300 mb-4 dark:text-[#DFDFDF] text-[0.95rem]">
-                                        Do you have a project in mind? Let's work together! Feel free to &nbsp;
-                                        <span
-                                            className="text-blue-500 cursor-pointer hover:underline"
-                                            onClick={() => {
-                                                const section = document.getElementById('contact');
-                                                if (section) {
-                                                    section.scrollIntoView({ behavior: 'smooth' });
-                                                }
-                                            }}
-                                        >
-                                            contact me
-                                        </span>.
+                                        A fully-fledged racing game made by myself and my three teammates in Unity for our two week game jam. Features three handmade trakcs, weather & speed modifiers, and leaderboards.
                                     </p>
                                 </div>
                             </div>
