@@ -53,7 +53,7 @@ const HomePage = () => {
                         <h1 className="text-white dark:text-[#DFDFDF] transition-all duration-200 text-[2.8rem] font-light text-center drop-shadow-md lg:text-[5rem] md:text-[4.7rem] sm:text-[4.5rem]">Mark Lovesey</h1>
                     </div>
                     <div className="flex justify-center items-center">
-                        <h1 className="text-white dark:text-[#959595] transition-all duration-200 w-[20rem] lg:w-[25rem] md:w-[20rem] sm:w-[20rem] text-[1.1rem] lg:text-[1.35rem] md:text-[1.35] sm:text-[1.3] font-normal text-center">4th Year Computer Science Major and English Minor at UBC</h1>
+                        <h1 className="text-white dark:text-[#959595] transition-all duration-200 w-[20rem] lg:w-[25rem] md:w-[20rem] sm:w-[20rem] text-[1.1rem] lg:text-[1.35rem] md:text-[1.35] sm:text-[1.3] font-normal text-center"><span className="text-violet-300">PHP</span> & <span className="text-[#0BB3D4]">Tailwind</span> Enjoyer</h1>
                     </div>
                     <div className="flex justify-center items-center mt-1">
                         <h2 className="text-white dark:text-[#959595] transition-all duration-200 text-[1.1rem] lg:text-[1.25rem] md:text-[1.25] sm:text-[1.2] font-extralight text-center">
@@ -110,8 +110,7 @@ const HomePage = () => {
                         {/*About me*/}
                         <h1 className="text-white font-semibold dark:text-[#DFDFDF] text-left text-[2rem] transition-all duration-200 mb-2 pt-8 px-6">About Me</h1>
                         <p className="text-white text-[1rem] dark:text-[#959595] transition-all duration-200 px-6">
-                            Hi, I'm Mark. I'm currently pursuing a Bachelor of Arts with a Major in Computer Science and a Minor in English at UBC.
-                            My native language is English, but I am also fluent in French. In my free time I enjoy playing guitar, hiking, biking, and camping.
+                            Hi, I’m Mark! I’ve recently completed my Bachelor of Arts in Computer Science with a Minor in English @ UBC. I was born in British Columbia, Canada. I speak English natively and French fluently. I enjoy building unique web apps that help others and in my free time I like going camping, hiking, and biking. If you have a project idea, feel free to contact me!
                         </p>
                         {/*Computer Science*/}
                         <div className="flex flex-col lg:flex-row lg:gap-16">
@@ -120,8 +119,7 @@ const HomePage = () => {
                                     Computer Science
                                 </h2>
                                 <p className="text-white text-[1rem] dark:text-[#959595] transition-all duration-200">
-                                    Throughout my degree, I learned a variety of different topics from Data Structures & Algorithims, Web Development, to Software Engineering and Data Analysis.
-                                    Recently, I've developed an interest in researching accessible website practices and more broadly exploring the principles of HCI.
+                                    Throughout my degree, I took a variety of courses from Data Structures & Algorithms, Web Development, and Project Management to Software Engineering and Data Analysis. I’m currently developing websites for two research projects @ UBC and am working to develop a walking app that tracks your steps through fictional journeys.
                                 </p>
                             </div>
                             {/*English*/}
@@ -130,8 +128,7 @@ const HomePage = () => {
                                     English
                                 </h2>
                                 <p className="text-white text-[1rem] dark:text-[#959595] transition-all duration-200">
-                                    I chose to pursue a minor in English because I wanted to improve both my ability to complete research effectively and to convey information concisely in written form.
-                                    In one English course I took, I developed a website for educators to teach children about climate change.
+                                    I chose to pursue a minor in English because I wanted a chance to improve my ability at giving verbal presentations and at researching hyper-specific subject areas. I found that I was able to incorporate my technical proficiency into my English courses. For instance, in one English course, I developed a website for educators to teach children about climate change.
                                 </p>
                             </div>
                         </div>
@@ -270,7 +267,7 @@ const HomePage = () => {
                                 {/* Image with overlay on hover */}
                                 <div className="relative overflow-hidden group">
                                     <img className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" src="images/wip.png" alt="Coming Soon" />
-                                 
+
                                 </div>
                                 {/* Content */}
                                 <div className="p-6">
@@ -294,7 +291,7 @@ const HomePage = () => {
                                     </div>
                                     {/* Description */}
                                     <p className="text-gray-700 dark:text-gray-300 mb-4 dark:text-[#DFDFDF] text-[0.95rem]">
-                                        Do you have a project in mind? Let's work together! Feel free to &nbsp;      
+                                        Do you have a project in mind? Let's work together! Feel free to &nbsp;
                                         <span
                                             className="text-blue-500 cursor-pointer hover:underline"
                                             onClick={() => {
