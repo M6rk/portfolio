@@ -29,7 +29,7 @@ const HomePage = () => {
                 <div className="flex flex-col h-[25rem] bg-center bg-cover bg-blue-400 dark:bg-[#101010] relative">
                     <button
                         onClick={scrollToTop}
-                        className={`fixed bottom-6 right-6 z-50 bg-[#599aea] dark:bg-[#262525] dark:bg-opacity-75 hover:bg-[#4a89d9] dark:hover:bg-[#252525] text-white p-3 rounded-full shadow-lg transition-all duration-300 ${showScrollTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}
+                        className={`fixed bottom-6 right-6 z-50 bg-[#5490d8] dark:bg-[#262525] dark:bg-opacity-75 hover:bg-[#4c84c9] dark:hover:bg-[#252525] text-white p-3 rounded-full shadow-lg transition-all duration-300 ${showScrollTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}
                         aria-label="Scroll to top"
                     >
                         <svg
@@ -53,7 +53,7 @@ const HomePage = () => {
                         <h1 className="text-white dark:text-[#DFDFDF] transition-all duration-200 text-[2.8rem] font-light text-center drop-shadow-md lg:text-[5rem] md:text-[4.7rem] sm:text-[4.5rem]">Mark Lovesey</h1>
                     </div>
                     <div className="flex justify-center items-center">
-                        <h1 className="text-white dark:text-[#959595] transition-all duration-200 w-[20rem] lg:w-[25rem] md:w-[20rem] sm:w-[20rem] text-[1.1rem] lg:text-[1.35rem] md:text-[1.35] sm:text-[1.3] font-normal text-center"><span className="text-violet-300">PHP</span> & <span className="text-[#0BB3D4]">Tailwind</span> Enjoyer</h1>
+                        <h1 className="text-white dark:text-[#959595] transition-all duration-200 w-[20rem] lg:w-[25rem] md:w-[20rem] sm:w-[20rem] text-[1.1rem] lg:text-[1.35rem] md:text-[1.35] sm:text-[1.3] font-normal text-center"><span className="text-violet-200 dark:text-violet-300">PHP</span> & <span className="text-blue-200 dark:text-[#0BB3D4]">Tailwind</span> Enjoyer</h1>
                     </div>
                     <div className="flex justify-center items-center mt-1">
                         <h2 className="text-white dark:text-[#959595] transition-all duration-200 text-[1.1rem] lg:text-[1.25rem] md:text-[1.25] sm:text-[1.2] font-extralight text-center">
@@ -110,7 +110,7 @@ const HomePage = () => {
                         {/*About me*/}
                         <h1 className="text-white font-semibold dark:text-[#DFDFDF] text-left text-[2rem] transition-all duration-200 mb-2 pt-8 px-6">About Me</h1>
                         <p className="text-white text-[1rem] dark:text-[#959595] transition-all duration-200 px-6">
-                            Hi, I’m Mark! I’ve recently completed my Bachelor of Arts in Computer Science with a Minor in English @ UBC. I was born in British Columbia, Canada. I speak English natively and French fluently. I enjoy building unique web apps that help others and in my free time I like going camping, hiking, and biking. If you have a project idea, feel free to contact me!
+                            Hi, I’m Mark! I’ve recently completed my Bachelor of Arts in Computer Science with a Minor in English @ UBC. I was born in Kelowna, BC, Canada. I speak English natively and French fluently. I enjoy building unique web apps that help others and in my free time I like going camping, hiking, and biking. If you have a project idea, feel free to contact me!
                         </p>
                         {/*Computer Science*/}
                         <div className="flex flex-col lg:flex-row lg:gap-16">
@@ -266,7 +266,7 @@ const HomePage = () => {
                             <div className="bg-white dark:bg-[#1A1A1A] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-[#5B9CEE] dark:border-[#252525]">
                                 {/* Image with overlay on hover */}
                                 <div className="relative overflow-hidden group">
-                                    <img className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" src="/images/WRcover.webp" alt="Project 2" />
+                                    <img className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" src="/images/weatheredroads.gif" alt="Project 2" />
                                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
                                         <a href="https://github.com/M6rk/weathered-roads" target="_blank" rel="noopener noreferrer" className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 flex items-center">
                                             <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
@@ -293,7 +293,126 @@ const HomePage = () => {
                                     </div>
                                     {/* Description */}
                                     <p className="text-gray-700 dark:text-gray-300 mb-4 dark:text-[#DFDFDF] text-[0.95rem]">
-                                        A fully-fledged racing game made by myself and my three teammates in Unity for our two week game jam. Features three handmade trakcs, weather & speed modifiers, and leaderboards.
+                                        A fully-fledged racing game made by myself and my three teammates in Unity for our two week game jam. Features three handmade trakcs, weather & speed modifiers, and leaderboards. <a href="https://nolannish.itch.io/weathered-roads" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Play our game here!</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr className="border-white dark:border-[#959595] border-t-2 max-w-[65%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto mt-20 mb-4" />
+                    <div className="max-w-[85%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200 mt-8">
+                        <h2 className="text-white font-semibold dark:text-[#DFDFDF] text-left text-[2rem] mb-6 px-6 mt-8">Design</h2>
+                    </div>
+                    <div className="max-w-[90%] xl:max-w-[53%] lg:max-w-[80%] md:max-w-[50%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            {/* Left column with stacked images */}
+                            <div className="flex flex-col space-y-8">
+                                <figure className="max-w-lg">
+                                    <img className="h-auto max-w-full rounded-lg" src="/images/lowpolylandscapetest.png" alt="Low-poly Landscape" />
+                                    <figcaption className="mt-2 text-sm text-center text-gray-100 dark:text-gray-400">Low-poly Landscape</figcaption>
+                                </figure>
+                                <figure className="max-w-lg">
+                                    <img className="h-auto max-w-full rounded-lg" src="/images/rnad6.png" alt="RNAD image" />
+                                    <figcaption className="mt-2 text-sm text-center text-gray-100 dark:text-gray-400">Renatus Network Google Ad</figcaption>
+                                </figure>
+                                <figure className="max-w-lg">
+                                    <img className="h-auto max-w-full rounded-lg" src="/images/rnvalentines.png" alt="RNAD image" />
+                                    <figcaption className="mt-2 text-sm text-center text-gray-100 dark:text-gray-400">Renatus Network Valentines Day Event Banner</figcaption>
+                                </figure>
+                            </div>
+
+                            {/* Right column with UAD flyer */}
+                            <figure className="max-w-lg h-full flex flex-col">
+                                <img className="h-auto max-w-full rounded-lg flex-grow object-cover" src="/images/UADflyer.png" alt="UAD Soccer Program Poster" />
+                                <figcaption className="mt-2 text-sm text-center text-gray-100 dark:text-gray-400">UAD Soccer Program Poster</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <hr className="border-white dark:border-[#959595] border-t-2 max-w-[65%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto mt-20 mb-4" />
+                    <div className="max-w-[85%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200 mt-8">
+                        <h2 className="text-white font-semibold dark:text-[#DFDFDF] text-left text-[2rem] mb-6 px-6 mt-8">Contract Work</h2>
+                    </div>
+                    {/* RESPECT Magazine */}  
+                    <div className="max-w-[90%] xl:max-w-[53%] lg:max-w-[80%] md:max-w-[50%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div className="bg-white dark:bg-[#1A1A1A] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-[#5B9CEE] dark:border-[#252525]">
+                                {/* Image with overlay on hover */}
+                                <div className="relative overflow-hidden group">
+                                    <img className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" src="/images/respect.png" alt="Project 2" />
+                                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                                        <a href="https://respect.ubc.ca/" target="_blank" rel="noopener noreferrer" className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 flex items-center">
+                                            <img
+                                                src="images/webglobe.svg"
+                                                alt="Web Icon"
+                                                className="w-4 h-4 mr-2 invert"
+                                            />
+                                            Visit Website
+                                        </a>
+                                    </div>
+                                </div>
+                                {/* Content */}
+                                <div className="p-6">
+                                    {/* Title */}
+                                    <h3 className="font-medium text-xl mb-2 text-gray-800 dark:text-[#DFDFDF]">UBC's RESPECT Magazine</h3>
+
+                                    {/* Tech stack tags */}
+                                    <div className="flex flex-wrap mb-4">
+                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">WordPress</span>
+                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">HTML</span>
+                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">CSS</span>
+                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">PHP</span>
+
+                                    </div>
+
+                                    {/* Role */}
+                                    <div className="mb-4">
+                                        <p className="text-sm font-medium text-gray-700 dark:text-[#DFDFDF]">
+                                            <span className="text-blue-600 dark:text-blue-400">Role:</span> Web Developer & Research Assistant
+                                        </p>
+                                    </div>
+                                    {/* Description */}
+                                    <p className="text-gray-700 dark:text-gray-300 mb-4 dark:text-[#DFDFDF] text-[0.95rem]">
+                                        I worked as a Web Developer and Research Assistant for <a href="respect.ubc.ca" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">UBC's RESPECT Magazine</a> where I led the development of a new website to house the project.
+                                    </p>
+                                </div>
+                            </div>
+                             <div className="bg-white dark:bg-[#1A1A1A] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-[#5B9CEE] dark:border-[#252525]">
+                                {/* Image with overlay on hover */}
+                                <div className="relative overflow-hidden group">
+                                    <img className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" src="/images/stear.png" alt="Project 2" />
+                                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                                        <a href="https://okencs-stearingai-2024.sites.olt.ubc.ca/" target="_blank" rel="noopener noreferrer" className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 flex items-center">
+                                            <img
+                                                src="images/webglobe.svg"
+                                                alt="Web Icon"
+                                                className="w-4 h-4 mr-2 invert"
+                                            />
+                                            Visit Website
+                                        </a>
+                                    </div>
+                                </div>
+                                {/* Content */}
+                                <div className="p-6">
+                                    {/* Title */}
+                                    <h3 className="font-medium text-xl mb-2 text-gray-800 dark:text-[#DFDFDF]">StEARing AI</h3>
+
+                                    {/* Tech stack tags */}
+                                    <div className="flex flex-wrap mb-4">
+                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">WordPress</span>
+                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">HTML</span>
+                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">CSS</span>
+
+                                    </div>
+                                    {/* Role */}
+                                    <div className="mb-4">
+                                        <p className="text-sm font-medium text-gray-700 dark:text-[#DFDFDF]">
+                                            <span className="text-blue-600 dark:text-blue-400">Role:</span> Web Developer
+                                        </p>
+                                    </div>
+                                    {/* Description */}
+                                    <p className="text-gray-700 dark:text-gray-300 mb-4 dark:text-[#DFDFDF] text-[0.95rem]">
+                                        I worked as a Web Developer for the <a href="https://okencs-stearingai-2024.sites.olt.ubc.ca/" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">StEARing AI</a> photovoice research project where I led the development of a website to showcase submissions.
                                     </p>
                                 </div>
                             </div>
