@@ -313,11 +313,11 @@ const HomePage = () => {
                                     <figcaption className="mt-2 text-sm text-center text-gray-100 dark:text-gray-400">Low-poly Landscape</figcaption>
                                 </figure>
                                 <figure className="max-w-lg">
-                                    <img className="h-auto max-w-full rounded-lg" src="/images/rnad6.png" alt="RNAD image" />
-                                    <figcaption className="mt-2 text-sm text-center text-gray-100 dark:text-gray-400">Renatus Network Google Ad</figcaption>
+                                    <img className="h-auto max-w-full rounded-lg" src="/images/twitban.jpg" alt="Twitter Banner" />
+                                    <figcaption className="mt-2 text-sm text-center text-gray-100 dark:text-gray-400">Twitter Banner</figcaption>
                                 </figure>
                                 <figure className="max-w-lg">
-                                    <img className="h-auto max-w-full rounded-lg" src="/images/rnvalentines.png" alt="RNAD image" />
+                                    <img className="h-auto max-w-full rounded-lg" src="/images/rnvalentines.png" alt="Renatus Network Ad image" />
                                     <figcaption className="mt-2 text-sm text-center text-gray-100 dark:text-gray-400">Renatus Network Valentines Day Event Banner</figcaption>
                                 </figure>
                             </div>
