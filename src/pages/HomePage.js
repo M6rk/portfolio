@@ -293,14 +293,14 @@ const HomePage = () => {
                                     </div>
                                     {/* Description */}
                                     <p className="text-gray-700 dark:text-gray-300 mb-4 dark:text-[#DFDFDF] text-[0.95rem]">
-                                        A fully-fledged racing game made by myself and my three teammates in Unity for our two week game jam. Features three handmade trakcs, weather & speed modifiers, and leaderboards. <a href="https://nolannish.itch.io/weathered-roads" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Play our game here!</a>
+                                        A fully-fledged racing game made by myself and my three teammates in Unity for our two week game jam. Features three handmade trakcs, weather & speed modifiers, and leaderboards. <a href="https://nolannish.itch.io/weathered-roads" className="font-medium text-blue-600 dark:text-blue-500 hover:underline" target="_blank">Play our game here!</a>
                                     </p>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <hr className="border-white dark:border-[#959595] border-t-2 max-w-[65%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto mt-20 mb-4" />
+                    <hr className="border-white dark:border-[#959595] border-t-2 max-w-[65%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto mt-12 sm:mt-20 md:mt-20 lg:mt-20 xl:mt-20 mb-4" />
                     <div className="max-w-[85%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200 mt-8">
                         <h2 className="text-white font-semibold dark:text-[#DFDFDF] text-left text-[2rem] mb-6 px-6 mt-8">Design</h2>
                     </div>
@@ -329,11 +329,11 @@ const HomePage = () => {
                             </figure>
                         </div>
                     </div>
-                    <hr className="border-white dark:border-[#959595] border-t-2 max-w-[65%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto mt-20 mb-4" />
+                    <hr className="border-white dark:border-[#959595] border-t-2 max-w-[65%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto mt-12 sm:mt-20 md:mt-20 lg:mt-20 xl:mt-20 mb-4" />
                     <div className="max-w-[85%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200 mt-8">
                         <h2 className="text-white font-semibold dark:text-[#DFDFDF] text-left text-[2rem] mb-6 px-6 mt-8">Contract Work</h2>
                     </div>
-                    {/* RESPECT Magazine */}  
+                    {/* RESPECT Magazine */}
                     <div className="max-w-[90%] xl:max-w-[53%] lg:max-w-[80%] md:max-w-[50%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                             <div className="bg-white dark:bg-[#1A1A1A] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-[#5B9CEE] dark:border-[#252525]">
@@ -376,11 +376,11 @@ const HomePage = () => {
                                     </div>
                                     {/* Description */}
                                     <p className="text-gray-700 dark:text-gray-300 mb-4 dark:text-[#DFDFDF] text-[0.95rem]">
-                                        I worked as a Web Developer and Research Assistant for <a href="respect.ubc.ca" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">UBC's RESPECT Magazine</a> where I led the development of a new website to house the project.
+                                        I worked as a Web Developer and Research Assistant for <a href="respect.ubc.ca" className="font-medium text-blue-600 dark:text-blue-500 hover:underline" target="_blank">UBC's RESPECT Magazine</a> where I led the development of a new website to house the project.
                                     </p>
                                 </div>
                             </div>
-                             <div className="bg-white dark:bg-[#1A1A1A] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-[#5B9CEE] dark:border-[#252525]">
+                            <div className="bg-white dark:bg-[#1A1A1A] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-[#5B9CEE] dark:border-[#252525]">
                                 {/* Image with overlay on hover */}
                                 <div className="relative overflow-hidden group">
                                     <img className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" src="/images/stear.png" alt="Project 2" />
@@ -412,19 +412,19 @@ const HomePage = () => {
                                         <p className="text-sm font-medium text-gray-700 dark:text-[#DFDFDF]">
                                             <span className="text-blue-600 dark:text-blue-400">Role:</span> Web Developer
                                         </p>
-                                         <p className="text-sm font-medium text-gray-400 dark:text-[#c4c4c4]">
+                                        <p className="text-sm font-medium text-gray-400 dark:text-[#c4c4c4]">
                                             March 2024 - July 2024
                                         </p>
                                     </div>
                                     {/* Description */}
                                     <p className="text-gray-700 dark:text-gray-300 mb-4 dark:text-[#DFDFDF] text-[0.95rem]">
-                                        I worked as a Web Developer for the <a href="https://okencs-stearingai-2024.sites.olt.ubc.ca/" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">StEARing AI</a> photovoice research project where I led the development of a website to showcase submissions.
+                                        I worked as a Web Developer for the <a href="https://okencs-stearingai-2024.sites.olt.ubc.ca/" className="font-medium text-blue-600 dark:text-blue-500 hover:underline" target="_blank">StEARing AI</a> photovoice research project where I led the development of a website to showcase submissions.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <hr className="border-white dark:border-[#959595] border-t-2 max-w-[65%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto mt-20 mb-4" />
+                    <hr className="border-white dark:border-[#959595] border-t-2 max-w-[65%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto mt-12 sm:mt-20 md:mt-20 lg:mt-20 xl:mt-20 mb-4" />
                     <div className="max-w-[85%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200 mt-8">
                         {/* Contact Text */}
                         <div className="flex flex-col lg:flex-row gap-4">
