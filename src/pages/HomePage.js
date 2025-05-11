@@ -318,7 +318,7 @@ const HomePage = () => {
                                 </figure>
                                 <figure className="max-w-lg">
                                     <img className="h-auto max-w-full rounded-lg" src="/images/rnvalentines.png" alt="Renatus Network Ad image" />
-                                    <figcaption className="mt-2 text-sm text-center text-gray-100 dark:text-gray-400">Renatus Network Valentines Day Event Banner</figcaption>
+                                    <figcaption className="mt-2 text-sm text-center text-gray-100 dark:text-gray-400">Commissioned Valentines Day Event Banner</figcaption>
                                 </figure>
                             </div>
 
