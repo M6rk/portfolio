@@ -376,7 +376,7 @@ const HomePage = () => {
                                     </div>
                                     {/* Description */}
                                     <p className="text-gray-700 dark:text-gray-300 mb-4 dark:text-[#DFDFDF] text-[0.95rem]">
-                                        I worked as a Web Developer and Research Assistant for <a href="respect.ubc.ca" className="font-medium text-blue-600 dark:text-blue-500 hover:underline" target="_blank">UBC's RESPECT Magazine</a> where I led the development of a new website to house the project.
+                                        I worked as a Web Developer and Research Assistant for <a href="https://respect.ubc.ca/" className="font-medium text-blue-600 dark:text-blue-500 hover:underline" target="_blank">UBC's RESPECT Magazine</a> where I led the development of a new website to house the project.
                                     </p>
                                 </div>
                             </div>
