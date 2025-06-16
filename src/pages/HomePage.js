@@ -300,13 +300,14 @@ const HomePage = () => {
 
                         </div>
                     </div>
+{/*                     
                     <hr className="border-white dark:border-[#959595] border-t-2 max-w-[65%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto mt-12 sm:mt-20 md:mt-20 lg:mt-20 xl:mt-20 mb-4" />
                     <div className="max-w-[85%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200 mt-8">
                         <h2 className="text-white font-semibold dark:text-[#DFDFDF] text-left text-[2rem] mb-6 px-6 mt-8">Design</h2>
                     </div>
                     <div className="max-w-[90%] xl:max-w-[53%] lg:max-w-[80%] md:max-w-[50%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                            {/* Left column with stacked images */}
+                            /* Left column with stacked images 
                             <div className="flex flex-col space-y-8">
                                 <figure className="max-w-lg">
                                     <img className="h-auto max-w-full rounded-lg" src="/images/lowpolylandscapetest.png" alt="Low-poly Landscape" />
@@ -322,13 +323,13 @@ const HomePage = () => {
                                 </figure>
                             </div>
 
-                            {/* Right column with UAD flyer */}
+                            /* Right column with UAD flyer 
                             <figure className="max-w-lg h-full flex flex-col">
                                 <img className="h-auto max-w-full rounded-lg flex-grow object-cover" src="/images/UADflyer.png" alt="UAD Soccer Program Poster" />
                                 <figcaption className="mt-2 text-sm text-center text-gray-100 dark:text-gray-400">UAD Soccer Program Poster</figcaption>
                             </figure>
                         </div>
-                    </div>
+                    </div> */}
                     <hr className="border-white dark:border-[#959595] border-t-2 max-w-[65%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto mt-12 sm:mt-20 md:mt-20 lg:mt-20 xl:mt-20 mb-4" />
                     <div className="max-w-[85%] xl:max-w-[60%] lg:max-w-[75%] md:max-w-[60%] sm:max-w-[60%] mx-auto px-4 transition-all duration-200 mt-8">
                         <h2 className="text-white font-semibold dark:text-[#DFDFDF] text-left text-[2rem] mb-6 px-6 mt-8">Contract Work</h2>
