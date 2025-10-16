@@ -110,7 +110,7 @@ const HomePage = () => {
                         {/*About me*/}
                         <h1 className="text-white font-semibold dark:text-[#DFDFDF] text-left text-[2rem] transition-all duration-200 mb-2 pt-8 px-6">About Me</h1>
                         <p className="text-white text-[1rem] dark:text-[#959595] transition-all duration-200 px-6">
-                            Hi, I’m Mark! I’ve recently completed my Bachelor of Arts in Computer Science with a Minor in English @ UBC. I was born in Kelowna, BC, Canada. I speak English natively and French fluently. I enjoy building unique web apps that help others and in my free time I like going camping, hiking, and biking. If you have a project idea, feel free to contact me!
+                            Hi, I’m Mark! I’ve recently completed my Bachelor of Arts in Computer Science with a Minor in English @ UBC. I was born in Kelowna, BC, Canada. I speak English natively and French fluently. I enjoy building unique web apps that help others and in my free time I like going camping, hiking, and fishing. If you have a project idea, feel free to contact me!
                         </p>
                         {/*Computer Science*/}
                         <div className="flex flex-col lg:flex-row lg:gap-16">
@@ -369,7 +369,7 @@ const HomePage = () => {
                                     {/* Role */}
                                     <div className="mb-4">
                                         <p className="text-sm font-medium text-gray-700 dark:text-[#DFDFDF]">
-                                            <span className="text-blue-600 dark:text-blue-400">Role:</span> Web Developer & Research Assistant
+                                            <span className="text-blue-600 dark:text-blue-400">Role:</span> Research Assistant
                                         </p>
                                         <p className="text-sm font-medium text-gray-400 dark:text-[#c4c4c4]">
                                             June 2023 - June 2024
@@ -377,14 +377,14 @@ const HomePage = () => {
                                     </div>
                                     {/* Description */}
                                     <p className="text-gray-700 dark:text-gray-300 mb-4 dark:text-[#DFDFDF] text-[0.95rem]">
-                                        I worked as a Web Developer and Research Assistant for <a href="https://respect.ubc.ca/" className="font-medium text-blue-600 dark:text-blue-500 hover:underline" target="_blank">UBC's RESPECT Magazine</a> where I led the development of a new website to house the project.
+                                        I worked as a Research Assistant for <a href="https://respect.ubc.ca/" className="font-medium text-blue-600 dark:text-blue-500 hover:underline" target="_blank">UBC's RESPECT Magazine</a> where I led the development of a new website to house the project.
                                     </p>
                                 </div>
                             </div>
                             <div className="bg-white dark:bg-[#1A1A1A] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-[#5B9CEE] dark:border-[#252525]">
                                 {/* Image with overlay on hover */}
                                 <div className="relative overflow-hidden group">
-                                    <img className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" src="/images/stear.png" alt="Project 2" />
+                                    <img className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" src="/images/tsascreenshot.jpg" alt="Project 2" />
                                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
                                         <a href="https://okencs-stearingai-2024.sites.olt.ubc.ca/" target="_blank" rel="noopener noreferrer" className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 flex items-center">
                                             <img
@@ -399,11 +399,13 @@ const HomePage = () => {
                                 {/* Content */}
                                 <div className="p-6">
                                     {/* Title */}
-                                    <h3 className="font-medium text-xl mb-2 text-gray-800 dark:text-[#DFDFDF]">StEARing AI</h3>
+                                    <h3 className="font-medium text-xl mb-2 text-gray-800 dark:text-[#DFDFDF]">The Salvation Army of Canada</h3>
 
                                     {/* Tech stack tags */}
                                     <div className="flex flex-wrap mb-4">
                                         <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">WordPress</span>
+                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">JavaScript</span>
+                                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">PHP</span>
                                         <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">HTML</span>
                                         <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-md mr-2 mb-2">CSS</span>
 
@@ -411,15 +413,15 @@ const HomePage = () => {
                                     {/* Role */}
                                     <div className="mb-4">
                                         <p className="text-sm font-medium text-gray-700 dark:text-[#DFDFDF]">
-                                            <span className="text-blue-600 dark:text-blue-400">Role:</span> Web Developer
+                                            <span className="text-blue-600 dark:text-blue-400">Role:</span> Admin and IT Assistant
                                         </p>
                                         <p className="text-sm font-medium text-gray-400 dark:text-[#c4c4c4]">
-                                            March 2024 - July 2024
+                                            June 2025 - Aug 2025
                                         </p>
                                     </div>
                                     {/* Description */}
                                     <p className="text-gray-700 dark:text-gray-300 mb-4 dark:text-[#DFDFDF] text-[0.95rem]">
-                                        I worked as a Web Developer for the <a href="https://okencs-stearingai-2024.sites.olt.ubc.ca/" className="font-medium text-blue-600 dark:text-blue-500 hover:underline" target="_blank">StEARing AI</a> photovoice research project where I led the development of a website to showcase submissions.
+                                        I worked as a IT and Admin Assistant for the <a href="https://kelownasalvationarmy.ca/" className="font-medium text-blue-600 dark:text-blue-500 hover:underline" target="_blank">The Okanagan Central Salvation Army</a> where I developed their new WordPress site, a full-stack room and fleet booking platform, and provided IT Support for staff members.
                                     </p>
                                 </div>
                             </div>
