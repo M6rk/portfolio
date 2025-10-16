@@ -114,7 +114,7 @@ const HomePage = () => {
                                     Computer Science
                                 </h2>
                                 <p className="text-white text-[1rem] dark:text-[#959595] transition-all duration-200">
-                                    Throughout my degree, I took a variety of courses from Data Structures & Algorithms, Web Development, and Project Management to Software Engineering and Data Analysis. I’m currently developing websites for two research projects @ UBC and am working to develop a walking app that tracks your steps through fictional journeys.
+                                    Throughout my degree, I took a variety of courses from Data Structures & Algorithms, Web Development, and Project Management to Software Engineering and Data Analysis. I'm currently trying to develop a walking app that tracks your steps through fictional journeys as a fun side project to keep myself programming.
                                 </p>
                             </div>
                             {/*English*/}
