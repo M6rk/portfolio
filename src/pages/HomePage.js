@@ -26,7 +26,7 @@ const HomePage = () => {
     return (
         <>
             <div className="bg-center bg-cover bg-white dark:bg-[#141414]">
-                <div className="flex flex-col h-[25rem] bg-center bg-cover bg-blue-400 dark:bg-[#101010] relative">
+                <div className="flex flex-col h-[22rem] bg-center bg-cover bg-blue-400 dark:bg-[#101010] relative">
                     <button
                         onClick={scrollToTop}
                         className={`fixed bottom-6 right-6 z-50 bg-[#5490d8] dark:bg-[#262525] dark:bg-opacity-75 hover:bg-[#4c84c9] dark:hover:bg-[#252525] text-white p-3 rounded-full shadow-lg transition-all duration-300 ${showScrollTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}
@@ -54,11 +54,6 @@ const HomePage = () => {
                     </div>
                     <div className="flex justify-center items-center">
                         <h1 className="text-white dark:text-[#959595] transition-all duration-200 w-[20rem] lg:w-[25rem] md:w-[20rem] sm:w-[20rem] text-[1.1rem] lg:text-[1.35rem] md:text-[1.35] sm:text-[1.3] font-normal text-center"><span className="text-violet-200 dark:text-violet-300">PHP</span> & <span className="text-blue-200 dark:text-[#0BB3D4]">Tailwind</span> Enjoyer</h1>
-                    </div>
-                    <div className="flex justify-center items-center mt-1">
-                        <h2 className="text-white dark:text-[#959595] transition-all duration-200 text-[1.1rem] lg:text-[1.25rem] md:text-[1.25] sm:text-[1.2] font-extralight text-center">
-                            Bridging <span className="font-semibold text-white dark:text-[#DFDFDF] underline decoration-amber-300 decoration-double">Tech</span> & <span className="font-semibold underline text-white dark:text-[#DFDFDF] decoration-green-300 decoration-double">Humanities</span>
-                        </h2>
                     </div>
                 </div>
                 {/*Shape divider*/}
