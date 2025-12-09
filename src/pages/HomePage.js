@@ -337,7 +337,7 @@ const HomePage = () => {
                                 <div className="relative overflow-hidden group">
                                     <img className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" src="/images/tsascreenshot.jpg" alt="Project 2" />
                                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
-                                        <a href="https://okencs-stearingai-2024.sites.olt.ubc.ca/" target="_blank" rel="noopener noreferrer" className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 flex items-center">
+                                        <a href="https://okanagancentralsalvationarmy.ca/" target="_blank" rel="noopener noreferrer" className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 flex items-center">
                                             <img
                                                 src="images/webglobe.svg"
                                                 alt="Web Icon"
@@ -372,7 +372,7 @@ const HomePage = () => {
                                     </div>
                                     {/* Description */}
                                     <p className="text-gray-700 dark:text-gray-300 mb-4 dark:text-[#DFDFDF] text-[0.95rem]">
-                                        I worked as a IT and Admin Assistant for the <a href="https://kelownasalvationarmy.ca/" className="font-medium text-blue-600 dark:text-blue-500 hover:underline" target="_blank">The Okanagan Central Salvation Army</a> where I developed their new WordPress site, a full-stack room and fleet booking platform, and provided IT Support for staff members.
+                                        I worked as a IT and Admin Assistant for the <a href="https://okanagancentralsalvationarmy.ca/" className="font-medium text-blue-600 dark:text-blue-500 hover:underline" target="_blank">The Okanagan Central Salvation Army</a> where I developed their new WordPress site, a full-stack room and fleet booking platform, and provided IT Support for staff members.
                                     </p>
                                 </div>
                             </div>
